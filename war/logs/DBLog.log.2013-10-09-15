@@ -1,0 +1,1 @@
+ INFO 09 十月 15:34:07,997- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =171

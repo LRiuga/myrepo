@@ -1,0 +1,6 @@
+ INFO 12 十月 13:54:33,174- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =153
+ INFO 12 十月 13:54:36,001- execSQLUpdate: update ArenaType set minLevel = ? , maxLevel = ? , isPublic = ? where id = ? =152
+ INFO 12 十月 13:55:23,786- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =765
+ INFO 12 十月 13:55:27,217- execSQLUpdate: update ArenaType set minLevel = ? , maxLevel = ? , isPublic = ? where id = ? =152
+ INFO 12 十月 13:57:20,148- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =469
+ INFO 12 十月 13:57:22,018- execSQLUpdate: update ArenaType set minLevel = ? , maxLevel = ? , isPublic = ? where id = ? =160

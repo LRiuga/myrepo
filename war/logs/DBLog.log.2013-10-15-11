@@ -1,0 +1,81 @@
+ INFO 15 十月 11:00:23,034- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =623
+ INFO 15 十月 11:00:23,431- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =951
+ INFO 15 十月 11:00:23,589- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =158
+ INFO 15 十月 11:00:25,985- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =3574
+ INFO 15 十月 11:00:26,457- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =4046
+ INFO 15 十月 11:00:26,866- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =4455
+ INFO 15 十月 11:01:16,828- execSQLUpdate: delete from activityReward where id=? =228
+ INFO 15 十月 11:01:16,902- execSQLUpdate: delete from activityReward where id=? =252
+ INFO 15 十月 11:01:17,019- execSQLUpdate: delete from activityReward where id=? =173
+ INFO 15 十月 11:01:17,093- execSQLUpdate: delete from activityReward where id=? =149
+ INFO 15 十月 11:01:17,188- execSQLUpdate: delete from activityReward where id=? =165
+ INFO 15 十月 11:01:17,262- execSQLUpdate: delete from activityReward where id=? =149
+ INFO 15 十月 11:01:17,525- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =335
+ INFO 15 十月 11:01:17,602- execSQLUpdate: delete from activityReward where id=? =902
+ INFO 15 十月 11:01:17,679- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =153
+ INFO 15 十月 11:01:17,978- execSQLUpdate: delete from activityReward where id=? =1083
+ INFO 15 十月 11:01:18,410- execSQLUpdate: delete from activityReward where id=? =1613
+ INFO 15 十月 11:01:18,848- execSQLUpdate: delete from activityReward where id=? =2100
+ INFO 15 十月 11:03:48,175- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =938
+ INFO 15 十月 11:03:48,244- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1007
+ INFO 15 十月 11:03:48,665- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1373
+ INFO 15 十月 11:03:48,765- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1528
+ INFO 15 十月 11:03:49,125- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =460
+ INFO 15 十月 11:03:49,333- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =2096
+ INFO 15 十月 11:03:55,828- doExecSQLQuery: select count(*) as num from _activityReward where activity_id = 35@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =164
+ INFO 15 十月 11:03:55,990- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  activity_id = 35 and RowNumber >?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =162
+ INFO 15 十月 11:04:14,568- doExecSQLQuery: select count(*) as num from _activityReward where activity_id = 35@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 11:04:14,650- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  activity_id = 35 and RowNumber >?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82
+ INFO 15 十月 11:04:24,819- doExecSQLQuery: select count(*) as num from _activityReward where activity_id = 35@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 11:04:24,900- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  activity_id = 35 and RowNumber >?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 15 十月 11:09:00,715- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1065
+ INFO 15 十月 11:09:00,788- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1138
+ INFO 15 十月 11:09:01,161- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1068
+ INFO 15 十月 11:09:01,239- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1589
+ INFO 15 十月 11:09:01,468- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =306
+ INFO 15 十月 11:09:01,697- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =2047
+ INFO 15 十月 11:09:09,159- execSQLUpdate: delete from _activityReward where id=? =228
+ INFO 15 十月 11:09:09,233- execSQLUpdate: delete from _activityReward where id=? =256
+ INFO 15 十月 11:09:09,762- execSQLUpdate: delete from _activityReward where id=? =739
+ INFO 15 十月 11:09:10,310- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1201
+ INFO 15 十月 11:09:10,542- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =231
+ INFO 15 十月 11:09:10,689- execSQLUpdate: delete from _activityReward where id=? =1619
+ INFO 15 十月 11:09:20,786- execSQLUpdate: delete from _activityReward where id=? =77
+ INFO 15 十月 11:09:20,951- execSQLUpdate: delete from _activityReward where id=? =148
+ INFO 15 十月 11:09:20,952- execSQLUpdate: delete from _activityReward where id=? =103
+ INFO 15 十月 11:09:21,066- execSQLUpdate: delete from _activityReward where id=? =169
+ INFO 15 十月 11:09:21,066- execSQLUpdate: delete from _activityReward where id=? =123
+ INFO 15 十月 11:09:21,066- execSQLUpdate: delete from _activityReward where id=? =311
+ INFO 15 十月 11:09:21,273- execSQLUpdate: delete from _activityReward where id=? =282
+ INFO 15 十月 11:09:21,351- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =321
+ INFO 15 十月 11:09:21,508- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 11:09:37,287- doExecSQLQuery: select count(*) as num from _activityReward where activity_id = 35@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =152
+ INFO 15 十月 11:09:37,444- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  activity_id = 35 and RowNumber >?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 11:09:59,788- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 15 十月 11:09:59,866- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 11:14:35,169- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =157
+ INFO 15 十月 11:14:35,461- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =354
+ INFO 15 十月 11:14:35,650- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 11:31:19,846- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 11:31:20,143- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =334
+ INFO 15 十月 11:31:20,299- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 11:33:35,711- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 11:33:35,827- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 11:33:35,908- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 15 十月 11:34:49,320- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 11:34:49,437- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 11:34:49,516- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 15 十月 11:56:49,249- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =954
+ INFO 15 十月 11:56:49,662- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =980
+ INFO 15 十月 11:56:49,823- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 11:57:05,817- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =154
+ INFO 15 十月 11:57:06,100- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =344
+ INFO 15 十月 11:57:06,256- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 11:58:58,901- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 11:58:59,015- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 11:58:59,094- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 11:59:11,427- execSQLUpdate: update _activity set activity_open = ? ,activity_close = ? where id = ? =159
+ INFO 15 十月 11:59:21,637- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 11:59:21,736- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 11:59:21,815- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 11:59:30,221- execSQLUpdate: update _activity set activity_open = ? ,activity_close = ? where id = ? =76

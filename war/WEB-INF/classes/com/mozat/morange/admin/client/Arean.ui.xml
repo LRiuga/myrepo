@@ -1,0 +1,78 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+		
+		td {
+			text-align:center;	
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<table class="table table-bordered">
+		<tr>
+			<td> 竞技场编号</td>
+			<td> 最小等级</td>
+			<td> 最大等级</td>
+			<td> 开放</td>
+			<td> 保存</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><g:TextBox ui:field="tb11"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb12"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z1"></g:CheckBox></td>
+			<td><g:Button ui:field="s1" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><g:TextBox ui:field="tb21"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb22"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z2"></g:CheckBox></td>
+			<td><g:Button ui:field="s2" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><g:TextBox ui:field="tb31"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb32"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z3"></g:CheckBox></td>
+			<td><g:Button ui:field="s3" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><g:TextBox ui:field="tb41"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb42"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z4"></g:CheckBox></td>
+			<td><g:Button ui:field="s4" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><g:TextBox ui:field="tb51"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb52"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z5"></g:CheckBox></td>
+			<td><g:Button ui:field="s5" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><g:TextBox ui:field="tb61"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb62"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z6"></g:CheckBox></td>
+			<td><g:Button ui:field="s6" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><g:TextBox ui:field="tb71"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb72"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z7"></g:CheckBox></td>
+			<td><g:Button ui:field="s7" styleName="style.important">保存</g:Button></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><g:TextBox ui:field="tb81"></g:TextBox></td>
+			<td><g:TextBox ui:field="tb82"></g:TextBox></td>
+			<td><g:CheckBox ui:field="z8"></g:CheckBox></td>
+			<td><g:Button ui:field="s8" styleName="style.important">保存</g:Button></td>
+		</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

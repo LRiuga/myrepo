@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>fisherDataServlet</servlet-name>
+		<servlet-class>com.mozat.morange.admin.server.fisher.FisherDataServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>fisherDataServlet</servlet-name>
+		<url-pattern>/oaadmin/fisherData</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>blackListServlet</servlet-name>
+		<servlet-class>com.mozat.morange.admin.server.BlackListServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>blackListServlet</servlet-name>
+		<url-pattern>/oaadmin/blackList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ActivityListServlet</servlet-name>
+		<servlet-class>com.mozat.morange.admin.server.ActivityListServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityListServlet</servlet-name>
+		<url-pattern>/oaadmin/ActivityList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RewardServlet</servlet-name>
+		<servlet-class>com.mozat.morange.admin.server.RewardServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RewardServlet</servlet-name>
+		<url-pattern>/oaadmin/Reward</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.mozat.morange.admin.server.LoginServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/oaadmin/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FriendServlet</servlet-name>
+		<servlet-class>com.mozat.morange.admin.server.FriendServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FriendServlet</servlet-name>
+		<url-pattern>/oaadmin/Friend</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+
+	
+</web-app>

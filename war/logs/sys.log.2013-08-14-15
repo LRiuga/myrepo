@@ -1,0 +1,18 @@
+ERROR 14 八月 15:17:24,101 -(isherDataServiceImpl.java:  26) - org.json.JSONException: JSONObject["type"] not found.
+ERROR 14 八月 15:17:57,418 -(isherDataServiceImpl.java:  26) - org.json.JSONException: JSONObject["type"] not found.
+ERROR 14 八月 15:19:37,743 -(isherDataServiceImpl.java:  26) - java.lang.Exception
+ERROR 14 八月 15:21:44,706 -(isherDataServiceImpl.java:  26) - java.lang.Exception
+ERROR 14 八月 15:25:43,451 -(isherDataServiceImpl.java:  26) - java.lang.Exception
+ERROR 14 八月 15:26:26,347 -(isherDataServiceImpl.java:  26) - java.lang.Exception
+ERROR 14 八月 15:27:13,380 -(isherDataServiceImpl.java:  26) - java.lang.Exception
+ERROR 14 八月 15:28:54,885 -(isherDataServiceImpl.java:  26) - java.lang.Exception
+ INFO 14 八月 15:30:06,618 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@fc953e
+ INFO 14 八月 15:33:31,710 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@f68dc4
+ INFO 14 八月 15:35:47,283 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1055ff0
+ INFO 14 八月 15:36:16,587 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@6f2bec
+ INFO 14 八月 15:37:54,282 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@12036b2
+ INFO 14 八月 15:38:02,595 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@19cb398
+ INFO 14 八月 15:39:50,344 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@468845
+ INFO 14 八月 15:40:38,720 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@11bab57
+ INFO 14 八月 15:48:18,116 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1e4aeed
+ INFO 14 八月 15:50:15,761 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ecef38

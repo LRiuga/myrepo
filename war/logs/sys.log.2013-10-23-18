@@ -1,0 +1,8 @@
+ INFO 23 十月 18:00:50,084 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@19b262e
+ INFO 23 十月 18:39:10,188 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1f57db3
+ERROR 23 十月 18:39:31,991 -(            HttpUtil.java:  93) - [doPost] exception : java.net.SocketTimeoutException: connect timed out
+ INFO 23 十月 18:41:21,672 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@abc2e8
+ INFO 23 十月 18:41:21,907 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@67b3e4
+ INFO 23 十月 18:41:22,609 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@102202
+ INFO 23 十月 18:41:22,781 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@5e22bd
+ INFO 23 十月 18:41:33,032 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@46df7e

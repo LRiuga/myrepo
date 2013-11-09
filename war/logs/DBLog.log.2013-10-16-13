@@ -1,0 +1,2 @@
+ INFO 16 十月 13:58:30,714- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 16 十月 13:58:30,793- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79

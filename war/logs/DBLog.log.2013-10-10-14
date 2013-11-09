@@ -1,0 +1,7 @@
+ INFO 10 十月 14:01:27,407- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 10 十月 14:03:28,830- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =122
+ INFO 10 十月 14:05:25,327- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 10 十月 14:06:47,870- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =89
+ INFO 10 十月 14:11:01,299- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =85
+ INFO 10 十月 14:11:50,722- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =83
+ INFO 10 十月 14:12:55,329- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =90

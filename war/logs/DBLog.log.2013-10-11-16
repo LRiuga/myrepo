@@ -1,0 +1,14 @@
+ INFO 11 十月 16:24:48,940- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =487
+ INFO 11 十月 16:24:49,106- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =164
+ INFO 11 十月 16:24:49,262- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 11 十月 16:24:49,656- execSQL: select user_name from user_info where user_id=? =393
+ INFO 11 十月 16:32:43,191- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =159
+ INFO 11 十月 16:32:57,107- doExecSQLQuery: select value from TribeMonsterConf where name = 'AppearPeriod'@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =159
+ INFO 11 十月 16:33:00,217- doExecSQLQuery: select value from TribeMonsterConf where name = 'AppearPeriod'@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 11 十月 16:33:02,328- doExecSQLQuery: select startTime,status from functionOnlineConf where name = 'equipmentLuckyDraw'@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =160
+ INFO 11 十月 16:33:06,317- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 11 十月 16:33:06,471- doExecSQLQuery: SELECT MAX(id) from functionOnlineConf@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =153
+ INFO 11 十月 16:33:06,630- execSQLUpdate: insert into functionOnlineConf(id,name,startTime,endTime,status) values(?,?,?,?,?) =158
+ INFO 11 十月 16:33:07,881- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 11 十月 16:33:25,751- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n4;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 11 十月 16:33:49,433- execSQLUpdate: update ArenaType set minLevel = ? , maxLevel = ? , isPublic = ? where id = ? =156

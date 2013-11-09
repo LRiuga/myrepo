@@ -1,0 +1,6 @@
+ INFO 14 十月 15:24:22,220- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 14 十月 15:24:22,476- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =319
+ INFO 14 十月 15:24:51,752- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =234
+ INFO 14 十月 15:24:57,966- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 14 十月 15:53:05,463- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =844
+ INFO 14 十月 15:53:08,418- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =3799

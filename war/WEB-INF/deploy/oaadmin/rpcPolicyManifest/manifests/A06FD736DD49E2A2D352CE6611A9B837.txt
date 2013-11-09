@@ -1,0 +1,2 @@
+serviceClass: com.mozat.morange.admin.client.activity.ActivityListService
+path: 44DBF37F867D96B29D1709224E87C931.gwt.rpc

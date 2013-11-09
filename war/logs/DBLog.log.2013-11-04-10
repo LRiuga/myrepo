@@ -1,0 +1,86 @@
+ INFO 04 十一月 10:12:15,543- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =606
+ INFO 04 十一月 10:12:15,695- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =150
+ INFO 04 十一月 10:12:15,867- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =172
+ERROR 04 十一月 10:12:16,038- execSQL error
+java.sql.SQLException: Cannot open database "OA_public_domain_n3" requested by the login. The login failed.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.login(TdsCore.java:599)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.<init>(ConnectionJDBC2.java:331)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC3.<init>(ConnectionJDBC3.java:50)
+	at net.sourceforge.jtds.jdbc.Driver.connect(Driver.java:178)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.mozat.morange.util.MoDB.getConnection(MoDB.java:58)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:196)
+	at com.mozat.morange.admin.server.fisher.Fisher.get(Fisher.java:179)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.handler(FisherDataServiceImpl.java:36)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.update(FisherDataServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 04 十一月 10:12:16,054- execSQL: select user_name from user_info where user_id=? =187
+ INFO 04 十一月 10:12:16,647- execSQL: select vip_lv from  Vip  where monet_Id=? =593
+ INFO 04 十一月 10:18:28,122- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =612
+ INFO 04 十一月 10:18:28,353- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =210
+ INFO 04 十一月 10:18:28,607- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =254
+ INFO 04 十一月 10:18:29,215- execSQL: select user_name from user_info where user_id=? =607
+ INFO 04 十一月 10:18:29,459- execSQL: select vip_lv from  Vip  where monet_Id=? =244
+ INFO 04 十一月 10:18:36,217- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =109
+ INFO 04 十一月 10:18:36,311- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =94
+ INFO 04 十一月 10:18:36,418- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =107
+ INFO 04 十一月 10:18:36,546- execSQL: select user_name from user_info where user_id=? =127
+ INFO 04 十一月 10:18:36,641- execSQL: select vip_lv from  Vip  where monet_Id=? =95
+ INFO 04 十一月 10:28:41,004- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 04 十一月 10:28:42,171- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =448
+ INFO 04 十一月 10:28:42,473- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =301
+ INFO 04 十一月 10:28:42,645- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =171
+ INFO 04 十一月 10:28:42,828- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =166
+ INFO 04 十一月 10:28:42,990- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =162
+ INFO 04 十一月 10:28:43,188- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =198
+ INFO 04 十一月 10:29:03,382- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'combo') =180
+ INFO 04 十一月 10:29:03,555- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.green'  	and lv in (1)  =173
+ INFO 04 十一月 10:29:03,739- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =184
+ INFO 04 十一月 10:29:03,910- execSQL: select newPrice from discountConf where shopItems =  ?  =170
+ INFO 04 十一月 10:29:04,103- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =193
+ INFO 04 十一月 10:29:04,291- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =187
+ INFO 04 十一月 10:29:04,471- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.blue'  	and lv in (1)  =179
+ INFO 04 十一月 10:29:04,559- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 04 十一月 10:29:04,672- execSQL: select newPrice from discountConf where shopItems =  ?  =112
+ INFO 04 十一月 10:29:04,754- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =81
+ INFO 04 十一月 10:29:04,838- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 04 十一月 10:53:26,774- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =252
+ INFO 04 十一月 10:53:27,272- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =686
+ INFO 04 十一月 10:53:27,447- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =174
+ INFO 04 十一月 10:53:34,173- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =172

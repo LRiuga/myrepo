@@ -1,0 +1,18 @@
+ INFO 20 八月 17:15:49,694- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =584
+ INFO 20 八月 17:28:01,239- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:31:19,022- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =577
+ INFO 20 八月 17:31:40,536- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =109
+ INFO 20 八月 17:31:40,551- doExecSQLQuery: select id,ship_name from shipType where id in (16,17,20)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =15
+ INFO 20 八月 17:32:09,296- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:32:09,312- doExecSQLQuery: select id,ship_name from shipType where id in (16,17,20)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 20 八月 17:33:24,925- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 20 八月 17:33:30,056- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:33:30,056- doExecSQLQuery: select itemtypeid,itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid in (2,3,4)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:36:17,801- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 20 八月 17:36:52,744- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:36:52,744- doExecSQLQuery: select itemtypeid,itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid in (2,3,4)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:37:20,044- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:37:20,044- doExecSQLQuery: select itemid,itemcreditText from shopitem where itemid in (0,23,113,128,141,147)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:54:41,044- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:56:58,464- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 20 八月 17:57:59,415- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0

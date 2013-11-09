@@ -1,0 +1,67 @@
+ INFO 15 十月 16:45:26,670- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =469
+ INFO 15 十月 16:45:26,831- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =160
+ INFO 15 十月 16:45:26,908- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =77
+ INFO 15 十月 16:45:26,984- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 16:45:41,614- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =140
+ INFO 15 十月 16:45:42,160- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =593
+ INFO 15 十月 16:45:42,322- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 16:46:54,421- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 16:46:54,578- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =157
+ INFO 15 十月 16:47:05,249- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 16:47:05,328- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 15 十月 16:47:06,295- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 16:47:06,372- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 16:47:06,855- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 16:47:06,931- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =75
+ INFO 15 十月 16:47:19,145- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =153
+ INFO 15 十月 16:47:19,299- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =154
+ INFO 15 十月 16:47:19,472- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 16:47:19,866- execSQL: select user_name from user_info where user_id=? =393
+ERROR 15 十月 16:47:26,335- execSQLUpdate error
+java.sql.SQLException: Invalid column name 'black_date'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:284)
+	at com.mozat.morange.admin.server.BlackListServiceImpl.add(BlackListServiceImpl.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 15 十月 16:47:26,336- execSQLUpdate: insert into blacklist (monet_id, msg, expire_date,black_date) values (?,?,?,?) =159
+ INFO 15 十月 16:47:32,944- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 15 十月 16:47:33,007- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =63
+ INFO 15 十月 16:56:54,622- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =468
+ INFO 15 十月 16:56:54,826- doExecSQLQuery: select count(*) as num from _activityReward@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =547
+ INFO 15 十月 16:56:55,145- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =319
+ INFO 15 十月 16:56:55,146- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1039
+ INFO 15 十月 16:56:55,376- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1238
+ INFO 15 十月 16:56:55,607- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1484

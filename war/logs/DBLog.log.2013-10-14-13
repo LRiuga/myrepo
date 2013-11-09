@@ -1,0 +1,284 @@
+ INFO 14 十月 13:47:58,387- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 14 十月 13:47:58,387- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset by peer: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:406)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.getActivityIdAndName(ActivityListServiceImpl.java:208)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 34 more
+ INFO 14 十月 13:47:58,403- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 14 十月 13:47:58,403- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset by peer: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.TdsCore.microsoftPrepare(TdsCore.java:1175)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.prepareSQL(ConnectionJDBC2.java:646)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:692)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.getAndSetItemName(ActivityListServiceImpl.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 35 more
+ INFO 14 十月 13:47:58,419- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 14 十月 13:47:58,419- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset by peer: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.TdsCore.microsoftPrepare(TdsCore.java:1175)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.prepareSQL(ConnectionJDBC2.java:646)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:692)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.getAndSetItemName(ActivityListServiceImpl.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 35 more
+ INFO 14 十月 13:47:58,419- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 14 十月 13:47:58,435- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset by peer: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.TdsCore.microsoftPrepare(TdsCore.java:1175)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.prepareSQL(ConnectionJDBC2.java:646)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:692)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.getAndSetItemName(ActivityListServiceImpl.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 35 more
+ INFO 14 十月 13:47:58,544- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 14 十月 13:47:58,544- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset by peer: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:406)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.listPrice(ActivityListServiceImpl.java:297)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 34 more
+ INFO 14 十月 13:49:09,904- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =967
+ INFO 14 十月 13:49:10,309- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1310
+ INFO 14 十月 13:49:10,475- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =161
+ INFO 14 十月 13:49:12,437- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =3500
+ INFO 14 十月 13:49:12,984- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =4047
+ INFO 14 十月 13:49:13,295- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =4358
+ INFO 14 十月 13:50:26,842- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =234
+ INFO 14 十月 13:50:26,936- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =297
+ INFO 14 十月 13:50:26,943- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =318
+ INFO 14 十月 13:50:26,943- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =288
+ INFO 14 十月 13:50:27,019- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =239
+ INFO 14 十月 13:50:27,173- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =154
+ INFO 14 十月 13:51:28,975- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 14 十月 13:51:29,566- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =590
+ INFO 14 十月 13:51:34,316- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =426
+ INFO 14 十月 13:51:35,461- doExecSQLQuery: select * from (select top 15 * from (select top 45 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1144
+ INFO 14 十月 13:51:42,779- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 14 十月 13:51:42,936- doExecSQLQuery: select * from (select top 15 * from (select top 60 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 14 十月 13:51:46,350- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =89
+ INFO 14 十月 13:51:46,508- doExecSQLQuery: select * from (select top 15 * from (select top 75 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =157
+ INFO 14 十月 13:53:39,976- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =998
+ INFO 14 十月 13:53:39,976- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =998
+ INFO 14 十月 13:53:40,278- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =848
+ INFO 14 十月 13:53:40,358- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1380
+ INFO 14 十月 13:53:40,508- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =226
+ INFO 14 十月 13:53:40,889- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1911
+ INFO 14 十月 13:53:56,043- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 14 十月 13:53:56,205- doExecSQLQuery: select * from (select top 15 * from (select top 225 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =161
+ INFO 14 十月 13:54:16,210- doExecSQLQuery: select count(*) as num from _activityPrize where activity_id = 64 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =164
+ INFO 14 十月 13:54:16,382- doExecSQLQuery: select * from (select top 15 * from (select top 225 * from _activityPrize where activity_id = 64 order by id ) as tablePage order by id desc) as tablePage2   order by id @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =171
+ INFO 14 十月 13:54:20,006- doExecSQLQuery: select count(*) as num from _activityPrize@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 14 十月 13:54:20,088- doExecSQLQuery: select * from (select top 15 * from (select top 225 * from _activityPrize order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82
+ INFO 14 十月 13:54:35,604- doExecSQLQuery: select count(*) as num from _activityPrize where activity_id = 60 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =161
+ INFO 14 十月 13:54:35,767- doExecSQLQuery: select * from (select top 15 * from (select top 225 * from _activityPrize where activity_id = 60 order by id ) as tablePage order by id desc) as tablePage2   order by id @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =163
+ INFO 14 十月 13:54:47,568- doExecSQLQuery: select count(*) as num from _activityPrize where activity_id = 60 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =91
+ INFO 14 十月 13:54:47,726- doExecSQLQuery: select * from (select top 15 * from (select top 210 * from _activityPrize where activity_id = 60 order by id ) as tablePage order by id desc) as tablePage2   order by id @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =158
+ INFO 14 十月 13:58:13,797- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =160
+ INFO 14 十月 13:58:14,129- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =382
+ INFO 14 十月 13:58:14,292- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =162
+ INFO 14 十月 13:58:17,475- doExecSQLQuery: select count(*) as num from _activity where activity_name like 'AttackFriend' @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =148
+ INFO 14 十月 13:58:17,637- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity where activity_name like 'AttackFriend' order by id ) as tablePage order by id desc) as tablePage2   order by id @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =162

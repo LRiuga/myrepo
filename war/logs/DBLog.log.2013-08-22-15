@@ -1,0 +1,108 @@
+ INFO 22 八月 15:02:26,549- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 15:02:26,552- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:02:26,554- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 15:02:26,558- execSQL: select user_name from user_info where user_id=? =4
+ INFO 22 八月 15:05:12,442- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:05:12,444- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:05:12,445- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:05:12,448- execSQL: select user_name from user_info where user_id=? =2
+ INFO 22 八月 15:05:24,608- execSQLUpdate: insert into blacklist (monet_id, msg, expire_date) values (?,?,?) =2
+ INFO 22 八月 15:09:02,404- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:09:02,406- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:09:02,408- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 15:09:02,410- execSQL: select user_name from user_info where user_id=? =1
+ERROR 22 八月 15:09:14,041- execSQLUpdate error
+java.sql.SQLException: 违反了 PRIMARY KEY 约束 'PK__blacklist__62EF9734'。不能在对象 'dbo.blacklist' 中插入重复键。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:218)
+	at com.mozat.morange.admin.server.BlackListServiceImpl.add(BlackListServiceImpl.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 22 八月 15:09:14,043- execSQLUpdate: insert into blacklist (monet_id, msg, expire_date) values (?,?,?) =7
+ INFO 22 八月 15:12:15,841- execSQLUpdate: insert into blacklist (monet_id, msg, expire_date) values (?,?,?) =0
+ INFO 22 八月 15:19:05,221- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =213
+ INFO 22 八月 15:19:05,224- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 15:19:05,227- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 15:19:05,236- execSQL: select user_name from user_info where user_id=? =9
+ERROR 22 八月 15:19:14,665- execSQLUpdate error
+java.sql.SQLException: Invalid parameter index 4.
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.getParameter(JtdsPreparedStatement.java:255)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.setParameter(JtdsPreparedStatement.java:326)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.setTimestamp(JtdsPreparedStatement.java:757)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setTimestamp(DelegatingPreparedStatement.java:143)
+	at com.mozat.morange.util.MoDBRW.setArgs(MoDBRW.java:259)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:214)
+	at com.mozat.morange.admin.server.BlackListServiceImpl.add(BlackListServiceImpl.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 22 八月 15:19:14,665- execSQLUpdate: insert into blacklist (monet_id, msg, expire_date,black_date) values (?,?,?) =15
+ INFO 22 八月 15:20:22,241- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =218
+ INFO 22 八月 15:20:22,244- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 15:20:22,247- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 15:20:22,255- execSQL: select user_name from user_info where user_id=? =7
+ INFO 22 八月 15:20:29,209- execSQLUpdate: insert into blacklist (monet_id, msg, expire_date,black_date) values (?,?,?,?) =1
+ INFO 22 八月 15:37:05,148- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =641
+ INFO 22 八月 15:37:05,163- doExecSQLQuery: select * from (select top 2 * from (select top 2 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =15
+ INFO 22 八月 15:40:31,130- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =608
+ INFO 22 八月 15:40:31,130- doExecSQLQuery: select * from (select top 2 * from (select top 2 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 15:50:23,523- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 15:50:23,523- doExecSQLQuery: select * from (select top 2 * from (select top 2 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 15:55:20,737- doExecSQLQuery: select count(*) as num from blacklist@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 15:55:20,737- doExecSQLQuery: select * from (select top 12 * from (select top 12 * from blacklist order by monet_id asc) as tablePage order by monet_id desc) as tablePage2 order by monet_id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0

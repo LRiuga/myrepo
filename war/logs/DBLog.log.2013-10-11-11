@@ -1,0 +1,48 @@
+ INFO 11 十月 11:25:41,027- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =505
+ INFO 11 十月 11:25:41,191- doExecSQLQuery: SELECT MAX(id) from functionOnlineConf@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =162
+ERROR 11 十月 11:25:41,196- execSQLUpdate error
+java.sql.SQLException: Invalid parameter index 5.
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.getParameter(JtdsPreparedStatement.java:255)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.setParameter(JtdsPreparedStatement.java:326)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.setInt(JtdsPreparedStatement.java:495)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:116)
+	at com.mozat.morange.util.MoDBRW.setArgs(MoDBRW.java:84)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:280)
+	at com.mozat.morange.admin.server.FriendServiceImpl.listEquipmentDiscount(FriendServiceImpl.java:298)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 11 十月 11:25:41,198- execSQLUpdate: insert into functionOnlineConf(id,name,startTime,endTime,status) values(?,?,?,?) =6
+ INFO 11 十月 11:27:52,479- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =462
+ INFO 11 十月 11:27:52,660- doExecSQLQuery: SELECT MAX(id) from functionOnlineConf@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =157
+ INFO 11 十月 11:27:52,826- execSQLUpdate: insert into functionOnlineConf(id,name,startTime,endTime,status) values(?,?,?,?,?) =165
+ INFO 11 十月 11:28:14,905- execSQLUpdate: UPDATE functionOnlineConf set status = ? ,startTime = ?,endTime=? where name = 'equipmentLuckyDraw' =160
+ INFO 11 十月 11:29:50,933- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =481
+ INFO 11 十月 11:29:58,901- execSQLUpdate: UPDATE functionOnlineConf set status = ? ,startTime = ?,endTime=? where name = 'equipmentLuckyDraw' =153
+ INFO 11 十月 11:30:39,088- doExecSQLQuery: select startTime,status from functionOnlineConf where name = 'invitationFriend'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =158
+ INFO 11 十月 11:30:51,258- execSQLUpdate: UPDATE functionOnlineConf set status = ? ,startTime = ? where name = 'invitationFriend' =158
+ INFO 11 十月 11:30:55,239- doExecSQLQuery: select startTime,status from functionOnlineConf where name = 'equipmentLuckyDraw'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =157

@@ -1,0 +1,8 @@
+# Module oaadmin
+# RPC service class, partial path of RPC policy file
+com.mozat.morange.admin.client.black.BlackListService, DFF2AD38FA8960FCD773CB36AF0DF716.gwt.rpc
+com.mozat.morange.admin.client.fisher.FisherDataService, D25D61B08A978216F7FBADF9D0A9BFB5.gwt.rpc
+com.mozat.morange.admin.client.FriendService, A4A4F0AE177AF6CC35CF35C4719CACE7.gwt.rpc
+com.mozat.morange.admin.client.LoginService, 99D7E39A9DF79B1EDE88913D582F24DC.gwt.rpc
+com.mozat.morange.admin.client.activity.ActivityListService, 44DBF37F867D96B29D1709224E87C931.gwt.rpc
+com.mozat.morange.admin.client.reward.RewardService, 103DE01234C1CA04D4090838D7A17E23.gwt.rpc

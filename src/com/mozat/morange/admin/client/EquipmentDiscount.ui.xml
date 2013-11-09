@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:datepicker="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		td {
+			text-align: center;
+		}
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<h2>装备打折</h2>
+		<table class="table table-bordered">
+			<tr>
+				<td>开放时间</td>
+				<td>结束时间</td>
+				<td>开启</td>
+				<td>保存</td>
+			</tr>
+			<tr>
+				<td><datepicker:DateBox ui:field="fromDate" /></td>
+				<td><datepicker:DateBox ui:field="toDate" /></td>
+				<td><g:CheckBox ui:field="openCb"></g:CheckBox></td>
+				<td><g:Button ui:field="saveBtn">保存</g:Button></td>
+			</tr>
+		</table>
+		
+		<g:FlexTable ui:field="eList" borderWidth="2" ></g:FlexTable>
+		<g:Button ui:field="saveBtn2" styleName="style.important">保存</g:Button><br/><br/>
+		
+		<g:FlexTable ui:field="eList2" borderWidth="2" ></g:FlexTable>
+		<g:Button ui:field="saveBtn3" styleName="style.important">保存</g:Button><br/><br/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

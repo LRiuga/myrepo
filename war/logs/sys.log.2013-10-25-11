@@ -1,0 +1,11 @@
+ INFO 25 十月 11:01:04,448 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1f0cddc
+ERROR 25 十月 11:01:11,685 -(            HttpUtil.java:  89) - [doPost] exception : java.net.MalformedURLException: no protocol: null?action=PREPARE_WORLD_MONSTER
+ INFO 25 十月 11:03:36,419 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1cb6a2f
+ERROR 25 十月 11:04:01,638 -(            HttpUtil.java:  89) - [doPost] exception : java.net.MalformedURLException: no protocol: null?action=PREPARE_WORLD_MONSTER
+ INFO 25 十月 11:05:47,378 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1dac8c7
+ERROR 25 十月 11:05:52,957 -(            HttpUtil.java:  89) - [doPost] exception : java.net.MalformedURLException: no protocol: null?action=PREPARE_WORLD_MONSTER
+ INFO 25 十月 11:07:35,224 -(              MoDBRW.java: 206) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@734fd0
+ERROR 25 十月 11:07:39,662 -(            HttpUtil.java:  93) - [doPost] exception : java.io.IOException: Server returned HTTP response code: 500 for URL: http://192.168.50.135:8087/gameapi?action=PREPARE_WORLD_MONSTER
+ERROR 25 十月 11:08:28,997 -(            HttpUtil.java:  93) - [doPost] exception : java.io.IOException: Server returned HTTP response code: 500 for URL: http://192.168.50.135:8087/gameapi?action=PREPARE_WORLD_MONSTER
+ERROR 25 十月 11:10:27,988 -(            HttpUtil.java:  93) - [doPost] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 25 十月 11:12:01,390 -(            HttpUtil.java:  93) - [doPost] exception : java.io.IOException: Server returned HTTP response code: 500 for URL: http://192.168.50.135:8087/gameapi?action=CREATE_WORLD_MONSTER

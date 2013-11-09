@@ -1,0 +1,20 @@
+ INFO 28 十月 15:10:18,301- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =499
+ INFO 28 十月 15:10:19,472- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =452
+ INFO 28 十月 15:10:20,596- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =156
+ INFO 28 十月 15:10:20,753- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =157
+ INFO 28 十月 15:11:29,631- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =515
+ INFO 28 十月 15:11:30,959- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =406
+ INFO 28 十月 15:11:31,973- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =171
+ INFO 28 十月 15:11:32,130- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =157
+ INFO 28 十月 15:13:22,444- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =500
+ INFO 28 十月 15:13:23,599- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =421
+ INFO 28 十月 15:13:24,604- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =177
+ INFO 28 十月 15:13:24,767- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =162
+ INFO 28 十月 15:16:16,455- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 28 十月 15:16:17,674- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =95
+ INFO 28 十月 15:16:18,860- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =79
+ INFO 28 十月 15:16:18,938- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =78
+ INFO 28 十月 15:17:55,143- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 28 十月 15:17:56,581- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =95
+ INFO 28 十月 15:17:57,767- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =79
+ INFO 28 十月 15:17:57,861- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =78

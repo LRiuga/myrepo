@@ -1,0 +1,57 @@
+ INFO 21 八月 11:24:23,624- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ERROR 21 八月 11:24:23,628- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:406)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:146)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:167)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:199)
+	at com.mozat.morange.admin.server.RewardServiceImpl.getItemName(RewardServiceImpl.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readFully(Unknown Source)
+	at java.io.DataInputStream.readFully(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.readPacket(SharedSocket.java:826)
+	at net.sourceforge.jtds.jdbc.SharedSocket.getNetPacket(SharedSocket.java:707)
+	at net.sourceforge.jtds.jdbc.ResponseStream.getPacket(ResponseStream.java:466)
+	at net.sourceforge.jtds.jdbc.ResponseStream.read(ResponseStream.java:103)
+	at net.sourceforge.jtds.jdbc.ResponseStream.peek(ResponseStream.java:88)
+	at net.sourceforge.jtds.jdbc.TdsCore.wait(TdsCore.java:3870)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1042)
+	... 34 more
+ INFO 21 八月 11:28:23,095- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =120
+ INFO 21 八月 11:28:23,098- doExecSQLQuery: select itemtypeid,itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid in (2,3,4)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =2
+ INFO 21 八月 11:28:32,814- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 21 八月 11:28:32,816- doExecSQLQuery: select id,ship_name from shipType where id in (16,17,20)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 21 八月 11:28:34,868- doExecSQLQuery: select distinct shopitemid from ActivityPrizeList where type = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 21 八月 11:28:34,871- doExecSQLQuery: select itemid,itemcreditText from shopitem where itemid in (0,23,113,128,141,147)@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =3

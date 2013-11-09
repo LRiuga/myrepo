@@ -1,0 +1,14 @@
+ INFO 28 十月 17:37:52,452- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 28 十月 17:37:53,687- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =88
+ INFO 28 十月 17:37:53,847- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =159
+ INFO 28 十月 17:37:53,932- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =84
+ INFO 28 十月 17:37:54,915- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =83
+ INFO 28 十月 17:37:54,998- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =82
+ INFO 28 十月 17:37:55,078- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =79
+ INFO 28 十月 17:42:52,733- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 28 十月 17:42:53,978- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =84
+ INFO 28 十月 17:42:54,139- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =160
+ INFO 28 十月 17:42:54,222- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =83
+ INFO 28 十月 17:42:55,212- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =80
+ INFO 28 十月 17:42:55,295- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =82
+ INFO 28 十月 17:42:55,376- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =80

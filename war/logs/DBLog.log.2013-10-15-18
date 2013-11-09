@@ -1,0 +1,181 @@
+ INFO 15 十月 18:03:18,727- doExecSQLQuery: select user_id from user_info where user_name like hello1%@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =788
+ERROR 15 十月 18:03:18,731- execSQLQuery db(0) error
+java.sql.SQLException: Incorrect syntax near '%'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:418)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.fisher.Fisher.get(Fisher.java:103)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.handler(FisherDataServiceImpl.java:46)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.update(FisherDataServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 15 十月 18:08:20,574- doExecSQLQuery: select user_id from user_info where user_name like hello1%@jdbc:jtds:sqlserver://192.168.50.14:43103/OA_public_domain;user=mozone;password=morangerunmozone;useLOBs=false =783
+ERROR 15 十月 18:08:20,591- execSQLQuery db(0) error
+java.sql.SQLException: Incorrect syntax near '%'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:418)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.fisher.Fisher.get(Fisher.java:103)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.handler(FisherDataServiceImpl.java:46)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.update(FisherDataServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 15 十月 18:09:43,540- doExecSQLQuery: select user_id from user_info where user_name = hello1@shabik.com@jdbc:jtds:sqlserver://192.168.50.14:43103/OA_public_domain;user=mozone;password=morangerunmozone;useLOBs=false =818
+ERROR 15 十月 18:09:43,542- execSQLQuery db(0) error
+java.sql.SQLException: The multi-part identifier "hello1@shabik.com" could not be bound.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:418)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:178)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:237)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:222)
+	at com.mozat.morange.admin.server.fisher.Fisher.get(Fisher.java:103)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.handler(FisherDataServiceImpl.java:46)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.update(FisherDataServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 15 十月 18:11:21,722- doExecSQLQuery: select user_id from user_info where user_name = 'hello1@shabik.com'@jdbc:jtds:sqlserver://192.168.50.14:43103/OA_public_domain;user=mozone;password=morangerunmozone;useLOBs=false =463
+ INFO 15 十月 18:11:22,107- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =385
+ INFO 15 十月 18:11:22,260- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =153
+ INFO 15 十月 18:11:22,415- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 18:11:22,572- execSQL: select user_name from user_info where user_id=? =157
+ INFO 15 十月 18:12:01,493- execSQLUpdate: update user_info set password = hashbytes('MD5', ? ) where user_id = ? =162
+ INFO 15 十月 18:13:09,535- execSQLUpdate: update user_info set password = hashbytes('MD5', ? ) where user_id = ? =82
+ INFO 15 十月 18:23:57,466- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =744
+ INFO 15 十月 18:23:57,619- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =152
+ INFO 15 十月 18:23:57,772- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =152
+ INFO 15 十月 18:23:58,159- execSQL: select user_name from user_info where user_id=? =387
+ INFO 15 十月 18:24:07,301- execSQLUpdate: update user_info set password = hashbytes('MD5', ? ) where user_id = ? =282
+ INFO 15 十月 18:45:01,741- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 18:45:02,234- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =555
+ INFO 15 十月 18:45:02,394- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =158
+ INFO 15 十月 18:47:26,554- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 18:47:26,713- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =158
+ INFO 15 十月 18:47:34,008- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 18:47:34,169- doExecSQLQuery: select * from (select top 15 * from (select top 45 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =160
+ INFO 15 十月 18:47:40,948- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =178
+ INFO 15 十月 18:47:41,131- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =182
+ INFO 15 十月 18:47:48,866- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =189
+ INFO 15 十月 18:47:49,046- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =179
+ INFO 15 十月 18:57:11,804- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =186
+ INFO 15 十月 18:57:11,997- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =192
+ INFO 15 十月 18:57:12,097- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =99
+ INFO 15 十月 18:57:12,194- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =97
+ INFO 15 十月 18:57:13,652- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =79
+ INFO 15 十月 18:57:13,729- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 18:57:13,806- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =77
+ INFO 15 十月 18:57:13,883- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 15 十月 18:58:33,241- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 18:58:33,541- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =362
+ INFO 15 十月 18:58:33,696- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =155
+ INFO 15 十月 18:58:53,807- execSQLUpdate: delete from _activity where id = ? =226
+ INFO 15 十月 18:58:53,881- execSQLUpdate: delete from _activity where id = ? =247
+ INFO 15 十月 18:58:54,136- execSQLUpdate: delete from _activity where id = ? =296
+ INFO 15 十月 18:58:54,432- execSQLUpdate: delete from _activity where id = ? =745
+ INFO 15 十月 18:58:54,900- execSQLUpdate: delete from _activity where id = ? =1110
+ INFO 15 十月 18:58:55,144- execSQLUpdate: delete from _activity where id = ? =1406
+ INFO 15 十月 18:58:56,966- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =142
+ INFO 15 十月 18:58:57,137- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 18:59:24,573- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =153
+ INFO 15 十月 18:59:24,726- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =152
+ INFO 15 十月 18:59:24,804- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =77
+ INFO 15 十月 18:59:24,881- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 15 十月 18:59:41,665- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 18:59:42,005- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =386
+ INFO 15 十月 18:59:42,161- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 15 十月 18:59:57,899- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =154
+ INFO 15 十月 18:59:58,115- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =270
+ INFO 15 十月 18:59:58,195- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79

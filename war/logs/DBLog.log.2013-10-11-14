@@ -1,0 +1,4 @@
+ INFO 11 十月 14:40:09,113- doExecSQLQuery: select value from TribeMonsterConf where name = 'AppearPeriod'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =604
+ INFO 11 十月 14:55:32,167- doExecSQLQuery: select value from TribeMonsterConf where name = 'AppearPeriod'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =473
+ INFO 11 十月 14:56:47,369- doExecSQLQuery: select value from TribeMonsterConf where name = 'AppearPeriod'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 11 十月 14:57:15,362- execSQLUpdate: update TribeMonsterConf set value = ? where  name = 'AppearPeriod'  =164

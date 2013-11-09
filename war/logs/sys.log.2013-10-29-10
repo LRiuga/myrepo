@@ -1,0 +1,121 @@
+ INFO 29 十月 10:00:40,699 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@12b0da8
+ INFO 29 十月 10:00:40,794 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@6dfb70
+ INFO 29 十月 10:00:40,950 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@15d44ce
+ INFO 29 十月 10:00:41,917 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@ebae1b
+ INFO 29 十月 10:00:42,012 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@19ab763
+ INFO 29 十月 10:00:42,105 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@144a40a
+ INFO 29 十月 10:01:53,312 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@104f90
+ INFO 29 十月 10:01:53,406 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@2d433e
+ INFO 29 十月 10:01:53,609 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@19e77ac
+ INFO 29 十月 10:01:54,498 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@14a7d0e
+ INFO 29 十月 10:01:54,577 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d61732
+ INFO 29 十月 10:01:54,671 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@132bc44
+ INFO 29 十月 10:08:30,043 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@12638ba
+ INFO 29 十月 10:08:30,137 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d59729
+ INFO 29 十月 10:08:30,321 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@493a1a
+ INFO 29 十月 10:13:50,909 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1dc5f3b
+ INFO 29 十月 10:13:51,097 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@291556
+ INFO 29 十月 10:13:51,393 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@17d326e
+ INFO 29 十月 10:13:51,861 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@17216b7
+ INFO 29 十月 10:13:52,127 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@e8086e
+ INFO 29 十月 10:13:52,314 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@ae46e
+ INFO 29 十月 10:14:32,924 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@164faf
+ INFO 29 十月 10:14:33,251 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1577b08
+ INFO 29 十月 10:14:33,815 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@185f48b
+ INFO 29 十月 10:14:34,060 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@3e7c
+ INFO 29 十月 10:14:34,313 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1245c05
+ INFO 29 十月 10:14:34,651 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@f18a48
+ INFO 29 十月 10:14:34,986 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@12f391f
+ INFO 29 十月 10:14:35,314 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1447319
+ INFO 29 十月 10:14:35,548 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@17d76a3
+ INFO 29 十月 10:14:35,798 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@18e3dab
+ INFO 29 十月 10:14:36,047 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1c3a93f
+ INFO 29 十月 10:14:36,298 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@7b1fa2
+ INFO 29 十月 10:14:36,548 -(            HttpUtil.java:  21) - doGet http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 29 十月 10:14:39,558 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 29 十月 10:14:39,558 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 29 十月 10:14:39,558 -(             GameAPI.java:  46) - java.net.SocketTimeoutException: connect timed out
+ INFO 29 十月 10:14:48,455 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@182f119
+ INFO 29 十月 10:14:48,565 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d4607
+ INFO 29 十月 10:14:49,236 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@17f61a6
+ INFO 29 十月 10:14:49,673 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1b2bfa9
+ INFO 29 十月 10:14:49,768 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@f598c0
+ INFO 29 十月 10:14:49,861 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@41972a
+ INFO 29 十月 10:19:54,840 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@ea0507
+ INFO 29 十月 10:20:03,175 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1c58595
+ INFO 29 十月 10:20:11,569 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ceb2c1
+ INFO 29 十月 10:20:19,990 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@e9823a
+ INFO 29 十月 10:20:27,961 -(            HttpUtil.java:  21) - doGet http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 29 十月 10:20:30,962 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 29 十月 10:20:30,962 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 29 十月 10:20:30,963 -(             GameAPI.java:  46) - java.net.SocketTimeoutException: connect timed out
+ INFO 29 十月 10:21:27,560 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@2d3f64
+ INFO 29 十月 10:21:27,908 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@aa06d0
+ INFO 29 十月 10:21:28,261 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@18a7008
+ INFO 29 十月 10:21:28,657 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@90a57a
+ INFO 29 十月 10:21:29,026 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1397394
+ INFO 29 十月 10:21:29,417 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@c44457
+ INFO 29 十月 10:21:29,769 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@10ee3fd
+ INFO 29 十月 10:21:30,147 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@10c35
+ INFO 29 十月 10:21:30,539 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@16b2580
+ INFO 29 十月 10:21:30,932 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@16f0c5
+ INFO 29 十月 10:21:31,288 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@10bd91d
+ INFO 29 十月 10:21:31,680 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@19e2d17
+ INFO 29 十月 10:21:32,051 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@8e4b62
+ INFO 29 十月 10:21:32,398 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@17316e4
+ INFO 29 十月 10:21:32,768 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@3fe60c
+ INFO 29 十月 10:21:33,114 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@27ef1e
+ INFO 29 十月 10:21:33,401 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@113629f
+ INFO 29 十月 10:21:33,726 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@3d2d58
+ INFO 29 十月 10:21:34,050 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@e31361
+ INFO 29 十月 10:21:34,389 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@16ba8d1
+ INFO 29 十月 10:21:34,757 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@e6951c
+ INFO 29 十月 10:21:35,610 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1fd32ce
+ INFO 29 十月 10:21:35,983 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ec458a
+ INFO 29 十月 10:21:36,386 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@82cee6
+ INFO 29 十月 10:21:36,736 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@3f364d
+ INFO 29 十月 10:21:37,120 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@cde2a3
+ INFO 29 十月 10:21:37,484 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@7a3306
+ INFO 29 十月 10:21:37,842 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@6ddd66
+ INFO 29 十月 10:21:38,239 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1e6a01a
+ INFO 29 十月 10:21:38,626 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ebdf2f
+ INFO 29 十月 10:21:38,882 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@11b5ee7
+ INFO 29 十月 10:21:39,158 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1dae667
+ INFO 29 十月 10:21:39,537 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d730e4
+ INFO 29 十月 10:21:39,859 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@19a3c0d
+ INFO 29 十月 10:21:40,182 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1534d47
+ INFO 29 十月 10:21:40,513 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@170eeb5
+ INFO 29 十月 10:21:40,849 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1c49916
+ INFO 29 十月 10:21:41,190 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@a8d530
+ INFO 29 十月 10:21:41,580 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@17bc3ce
+ INFO 29 十月 10:21:42,531 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@112d46d
+ INFO 29 十月 10:21:42,900 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@81e139
+ INFO 29 十月 10:21:43,248 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@ebbc6e
+ INFO 29 十月 10:21:43,615 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1c0ea16
+ INFO 29 十月 10:21:43,959 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1c970a6
+ INFO 29 十月 10:21:44,305 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@10f8091
+ INFO 29 十月 10:21:44,598 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1e2ef86
+ INFO 29 十月 10:21:44,862 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@825f62
+ INFO 29 十月 10:21:45,224 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1cc9e8f
+ INFO 29 十月 10:21:46,086 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1fec323
+ INFO 29 十月 10:21:46,443 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@3237df
+ INFO 29 十月 10:21:46,820 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@9f930f
+ INFO 29 十月 10:21:47,172 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@a3c621
+ INFO 29 十月 10:21:47,529 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@851120
+ INFO 29 十月 10:21:47,923 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@a59698
+ INFO 29 十月 10:21:48,266 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@846dc1
+ INFO 29 十月 10:21:48,619 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@6b5cb1
+ INFO 29 十月 10:21:49,029 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1fbf6c0
+ INFO 29 十月 10:21:49,393 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@11210e6
+ INFO 29 十月 10:21:49,746 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1269545
+ INFO 29 十月 10:21:50,280 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@684b65
+ INFO 29 十月 10:21:50,653 -(            HttpUtil.java:  21) - doGet http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 29 十月 10:21:53,654 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 29 十月 10:21:53,654 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 29 十月 10:21:53,655 -(             GameAPI.java:  46) - java.net.SocketTimeoutException: connect timed out
+ INFO 29 十月 10:21:59,833 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1f6e3e0
+ INFO 29 十月 10:21:59,942 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1b584bf
+ INFO 29 十月 10:22:00,124 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@e57591
+ INFO 29 十月 10:22:01,538 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@177f21b
+ INFO 29 十月 10:22:01,636 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1b518aa
+ INFO 29 十月 10:22:01,731 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@c8d858

@@ -1,0 +1,2 @@
+serviceClass: com.mozat.morange.admin.client.LoginService
+path: 99D7E39A9DF79B1EDE88913D582F24DC.gwt.rpc

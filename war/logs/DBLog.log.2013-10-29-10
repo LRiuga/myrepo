@@ -1,0 +1,649 @@
+ INFO 29 十月 10:00:39,560- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 29 十月 10:00:40,794- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =95
+ INFO 29 十月 10:00:40,950- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =156
+ INFO 29 十月 10:00:41,044- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =94
+ INFO 29 十月 10:00:42,012- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =95
+ INFO 29 十月 10:00:42,105- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =93
+ INFO 29 十月 10:00:42,199- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =94
+ INFO 29 十月 10:01:52,203- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 29 十月 10:01:53,406- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =94
+ INFO 29 十月 10:01:53,609- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =203
+ INFO 29 十月 10:01:53,703- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =94
+ INFO 29 十月 10:01:54,577- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =79
+ INFO 29 十月 10:01:54,671- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =94
+ INFO 29 十月 10:01:54,749- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =78
+ INFO 29 十月 10:08:28,872- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 29 十月 10:08:30,137- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =94
+ INFO 29 十月 10:08:30,320- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =183
+ INFO 29 十月 10:08:30,404- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =83
+ INFO 29 十月 10:13:49,899- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =511
+ INFO 29 十月 10:13:51,097- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =454
+ INFO 29 十月 10:13:51,393- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =296
+ INFO 29 十月 10:13:52,064- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =671
+ INFO 29 十月 10:13:52,127- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =266
+ INFO 29 十月 10:13:52,313- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =186
+ INFO 29 十月 10:13:52,485- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =171
+ INFO 29 十月 10:14:32,923- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'combo') =162
+ INFO 29 十月 10:14:33,088- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.green'  	and lv in (10,20)  =164
+ INFO 29 十月 10:14:33,250- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =161
+ INFO 29 十月 10:14:33,410- execSQL: select newPrice from discountConf where shopItems =  ?  =159
+ INFO 29 十月 10:14:33,572- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =162
+ INFO 29 十月 10:14:33,734- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =161
+ INFO 29 十月 10:14:33,815- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:14:33,897- execSQL: select newPrice from discountConf where shopItems =  ?  =82
+ INFO 29 十月 10:14:33,977- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =79
+ INFO 29 十月 10:14:34,060- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:14:34,229- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.blue'  	and lv in (10,20,25,30)  =169
+ INFO 29 十月 10:14:34,312- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =83
+ INFO 29 十月 10:14:34,396- execSQL: select newPrice from discountConf where shopItems =  ?  =83
+ INFO 29 十月 10:14:34,477- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =80
+ INFO 29 十月 10:14:34,559- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:14:34,651- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:14:34,736- execSQL: select newPrice from discountConf where shopItems =  ?  =85
+ INFO 29 十月 10:14:34,814- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =77
+ INFO 29 十月 10:14:34,892- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =78
+ INFO 29 十月 10:14:34,970- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 29 十月 10:14:35,065- execSQL: select newPrice from discountConf where shopItems =  ?  =79
+ INFO 29 十月 10:14:35,143- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =78
+ INFO 29 十月 10:14:35,221- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =78
+ INFO 29 十月 10:14:35,299- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 29 十月 10:14:35,392- execSQL: select newPrice from discountConf where shopItems =  ?  =78
+ INFO 29 十月 10:14:35,470- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =78
+ INFO 29 十月 10:14:35,548- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =78
+ INFO 29 十月 10:14:35,720- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.purple'  	and lv in (10)  =172
+ INFO 29 十月 10:14:35,798- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 29 十月 10:14:35,876- execSQL: select newPrice from discountConf where shopItems =  ?  =78
+ INFO 29 十月 10:14:35,954- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =78
+ INFO 29 十月 10:14:36,032- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =78
+ INFO 29 十月 10:14:36,204- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.orange'  	and lv in (10)  =157
+ INFO 29 十月 10:14:36,298- execSQLUpdate: update discountConf set newPrice = listPrice * 70 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:14:36,376- execSQL: select newPrice from discountConf where shopItems =  ?  =78
+ INFO 29 十月 10:14:36,470- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =94
+ INFO 29 十月 10:14:36,548- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =78
+ INFO 29 十月 10:14:47,315- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 29 十月 10:14:48,565- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =110
+ INFO 29 十月 10:14:49,236- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =671
+ INFO 29 十月 10:14:49,330- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =94
+ INFO 29 十月 10:14:49,768- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =95
+ INFO 29 十月 10:14:49,861- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =93
+ INFO 29 十月 10:14:49,955- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =94
+ INFO 29 十月 10:19:54,839- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'Equipment') =200
+ INFO 29 十月 10:19:55,036- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'green'  	and buy_level in (1,10,20,25,30,35,40,45,50,60,70,80,90,100) ) =197
+ INFO 29 十月 10:19:55,244- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =207
+ INFO 29 十月 10:19:55,355- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =110
+ INFO 29 十月 10:19:55,451- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:19:55,539- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:19:55,628- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:19:55,714- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:19:55,807- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:19:55,907- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:19:56,014- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =107
+ INFO 29 十月 10:19:56,116- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:19:56,206- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =89
+ INFO 29 十月 10:19:56,294- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:19:56,392- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:19:56,491- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =99
+ INFO 29 十月 10:19:56,581- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:19:56,665- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:19:56,759- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:19:56,862- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:19:56,960- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:19:57,060- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:19:57,158- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:19:57,249- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:19:57,334- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:19:57,428- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:19:57,516- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:19:57,612- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:19:57,705- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:19:57,809- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:19:57,904- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:19:57,996- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:19:58,085- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =89
+ INFO 29 十月 10:19:58,168- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =82
+ INFO 29 十月 10:19:58,254- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:19:58,338- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 29 十月 10:19:58,429- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:19:58,520- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =90
+ INFO 29 十月 10:19:58,612- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:19:58,703- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =90
+ INFO 29 十月 10:19:58,806- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =103
+ INFO 29 十月 10:19:58,904- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:19:59,003- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:19:59,094- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:19:59,187- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:19:59,276- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =89
+ INFO 29 十月 10:19:59,373- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:19:59,466- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:19:59,567- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:19:59,672- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =105
+ INFO 29 十月 10:19:59,773- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =100
+ INFO 29 十月 10:19:59,872- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =99
+ INFO 29 十月 10:19:59,970- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:00,071- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:00,171- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:20:00,273- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:00,358- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:00,458- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:00,551- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:20:00,645- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:20:00,749- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =102
+ INFO 29 十月 10:20:00,844- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:20:00,943- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:20:01,044- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =101
+ INFO 29 十月 10:20:01,143- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:20:01,232- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:01,319- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:01,410- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =90
+ INFO 29 十月 10:20:01,506- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:01,602- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:20:01,699- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:01,800- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:01,898- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =98
+ INFO 29 十月 10:20:02,001- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:02,099- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =98
+ INFO 29 十月 10:20:02,197- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:02,300- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =102
+ INFO 29 十月 10:20:02,397- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:02,491- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:20:02,588- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:20:02,685- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:02,781- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:20:02,876- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:02,967- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:03,072- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =105
+ INFO 29 十月 10:20:03,175- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:03,369- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'blue'  	and buy_level in (1,10,20,25,30,35,40,45,50,60,70,80,90,100) ) =194
+ INFO 29 十月 10:20:03,465- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:03,556- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:03,648- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:20:03,748- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:03,858- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =110
+ INFO 29 十月 10:20:03,963- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =105
+ INFO 29 十月 10:20:04,069- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =105
+ INFO 29 十月 10:20:04,164- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 29 十月 10:20:04,271- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =107
+ INFO 29 十月 10:20:04,368- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:20:04,454- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:04,538- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 29 十月 10:20:04,620- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =82
+ INFO 29 十月 10:20:04,700- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:04,780- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:04,871- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:04,955- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =84
+ INFO 29 十月 10:20:05,046- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:05,136- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =89
+ INFO 29 十月 10:20:05,230- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:20:05,327- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:05,430- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:20:05,532- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =102
+ INFO 29 十月 10:20:05,619- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:20:05,700- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:20:05,783- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =82
+ INFO 29 十月 10:20:05,866- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =82
+ INFO 29 十月 10:20:05,948- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =82
+ INFO 29 十月 10:20:06,036- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:06,126- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:06,233- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:06,320- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:06,415- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:20:06,511- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:06,607- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:06,706- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:06,809- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =103
+ INFO 29 十月 10:20:06,906- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:20:06,998- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:20:07,085- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:07,176- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:20:07,263- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:07,344- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:20:07,432- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:07,529- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:07,631- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:07,729- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =98
+ INFO 29 十月 10:20:07,833- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =104
+ INFO 29 十月 10:20:07,924- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:20:08,507- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =583
+ INFO 29 十月 10:20:08,587- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 29 十月 10:20:08,671- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:20:08,756- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:08,841- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:20:08,924- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =82
+ INFO 29 十月 10:20:09,004- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 29 十月 10:20:09,091- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:20:09,180- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =89
+ INFO 29 十月 10:20:09,275- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:09,366- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:09,462- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:09,554- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:09,641- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:09,728- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:20:09,825- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:09,922- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:10,018- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:10,124- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =105
+ INFO 29 十月 10:20:10,226- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:20:10,322- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:10,410- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:20:10,514- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =104
+ INFO 29 十月 10:20:10,615- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:20:10,712- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:10,793- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:20:10,877- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 29 十月 10:20:10,961- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =84
+ INFO 29 十月 10:20:11,043- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:20:11,123- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 29 十月 10:20:11,207- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 29 十月 10:20:11,298- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:20:11,387- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:11,476- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =89
+ INFO 29 十月 10:20:11,568- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:11,773- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'purple'  	and buy_level in (1,10,20,25,30,35,40,45,50,60,70,80,90,100) ) =204
+ INFO 29 十月 10:20:11,865- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:20:11,961- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:20:12,057- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:12,151- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 29 十月 10:20:12,243- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:20:12,335- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:12,427- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:20:12,525- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:20:12,633- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =108
+ INFO 29 十月 10:20:12,732- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:12,826- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:20:12,929- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:20:13,034- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =104
+ INFO 29 十月 10:20:13,140- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =106
+ INFO 29 十月 10:20:13,243- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =102
+ INFO 29 十月 10:20:13,340- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:13,429- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:20:13,509- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:13,592- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =83
+ INFO 29 十月 10:20:13,679- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:13,766- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:13,863- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:13,960- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:14,059- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:14,159- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =100
+ INFO 29 十月 10:20:14,256- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:14,358- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =102
+ INFO 29 十月 10:20:14,461- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:20:14,561- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =100
+ INFO 29 十月 10:20:14,652- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:14,749- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:14,858- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =109
+ INFO 29 十月 10:20:14,954- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:15,054- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:15,146- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:20:15,234- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:15,331- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:15,413- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:15,498- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:15,591- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:20:15,693- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:20:15,796- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:15,877- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:20:15,956- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 29 十月 10:20:16,036- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:16,117- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:20:16,207- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:20:16,301- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:20:16,387- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:20:16,472- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:20:16,552- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:16,632- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:16,727- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:20:16,824- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:17,356- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =532
+ INFO 29 十月 10:20:17,437- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:20:17,517- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:17,597- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:17,676- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 29 十月 10:20:17,757- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:20:17,838- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:17,932- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 29 十月 10:20:18,027- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:20:18,118- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:18,212- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:20:18,311- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:18,398- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:20:18,493- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 29 十月 10:20:18,580- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:18,665- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:20:18,757- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:20:18,856- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:18,959- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =102
+ INFO 29 十月 10:20:19,061- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:19,162- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:20:19,260- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:20:19,350- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:20:19,445- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 29 十月 10:20:19,538- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:20:19,630- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:19,720- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:20:19,808- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:19,900- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:20:19,990- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =89
+ INFO 29 十月 10:20:20,180- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'orange'  	and buy_level in (1,10,20,25,30,35,40,45,50,60,70,80,90,100) ) =190
+ INFO 29 十月 10:20:20,275- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:20,374- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =99
+ INFO 29 十月 10:20:20,469- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:20,561- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:20,652- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:20:20,741- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =89
+ INFO 29 十月 10:20:20,842- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:20:20,946- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:20:21,043- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:21,141- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:21,231- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:20:21,315- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:20:21,403- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:20:21,492- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:21,581- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =89
+ INFO 29 十月 10:20:21,668- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:21,752- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =83
+ INFO 29 十月 10:20:21,839- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:21,933- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:20:22,034- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =101
+ INFO 29 十月 10:20:22,139- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =104
+ INFO 29 十月 10:20:22,235- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:22,331- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:22,423- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:22,508- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:22,598- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =89
+ INFO 29 十月 10:20:22,696- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:22,796- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:22,890- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:20:22,993- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:23,104- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =110
+ INFO 29 十月 10:20:23,199- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:20:23,280- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:23,360- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:23,439- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 29 十月 10:20:23,519- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:23,600- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:20:23,679- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 29 十月 10:20:23,758- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 29 十月 10:20:23,839- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:20:23,927- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:24,018- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:24,115- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:24,202- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:20:24,299- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:24,395- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:20:24,493- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:24,600- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =106
+ INFO 29 十月 10:20:24,696- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:24,787- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:24,882- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:24,985- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:20:25,086- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:20:25,186- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:20:25,282- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:25,370- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:20:25,451- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:20:25,532- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:20:25,617- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:25,701- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 29 十月 10:20:25,786- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:20:25,875- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:25,962- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:20:26,050- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:20:26,145- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:20:26,238- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:20:26,334- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:26,436- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =101
+ INFO 29 十月 10:20:26,535- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:20:26,640- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =104
+ INFO 29 十月 10:20:26,734- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:20:26,833- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:20:26,927- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:20:27,018- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:20:27,115- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:27,211- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:20:27,308- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:27,400- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:27,497- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:20:27,600- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:20:27,696- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:20:27,788- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:20:27,872- execSQLUpdate: update discountConf set newPrice = listPrice * 80 / 100 ,[percent] = ?  where shopItems =  ? =84
+ INFO 29 十月 10:20:27,961- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:21:27,559- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'combo') =87
+ INFO 29 十月 10:21:27,733- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.green'  	and lv in (1,10,20,25,30,35,40,45,50,60,70,80,90,100)  =173
+ INFO 29 十月 10:21:27,908- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =175
+ INFO 29 十月 10:21:27,998- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:28,086- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =88
+ INFO 29 十月 10:21:28,169- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:21:28,260- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:21:28,351- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:28,451- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =99
+ INFO 29 十月 10:21:28,558- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =107
+ INFO 29 十月 10:21:28,657- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:21:28,748- execSQL: select newPrice from discountConf where shopItems =  ?  =91
+ INFO 29 十月 10:21:28,836- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =88
+ INFO 29 十月 10:21:28,931- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:21:29,025- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:21:29,132- execSQL: select newPrice from discountConf where shopItems =  ?  =106
+ INFO 29 十月 10:21:29,231- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =99
+ INFO 29 十月 10:21:29,332- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =101
+ INFO 29 十月 10:21:29,417- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =84
+ INFO 29 十月 10:21:29,507- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:29,594- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =86
+ INFO 29 十月 10:21:29,684- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =90
+ INFO 29 十月 10:21:29,768- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =83
+ INFO 29 十月 10:21:29,856- execSQL: select newPrice from discountConf where shopItems =  ?  =88
+ INFO 29 十月 10:21:29,950- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =94
+ INFO 29 十月 10:21:30,045- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 29 十月 10:21:30,146- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =101
+ INFO 29 十月 10:21:30,245- execSQL: select newPrice from discountConf where shopItems =  ?  =98
+ INFO 29 十月 10:21:30,343- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =98
+ INFO 29 十月 10:21:30,441- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:21:30,538- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =97
+ INFO 29 十月 10:21:30,637- execSQL: select newPrice from discountConf where shopItems =  ?  =99
+ INFO 29 十月 10:21:30,749- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =112
+ INFO 29 十月 10:21:30,844- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:21:30,931- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 29 十月 10:21:31,014- execSQL: select newPrice from discountConf where shopItems =  ?  =82
+ INFO 29 十月 10:21:31,102- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =87
+ INFO 29 十月 10:21:31,195- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:21:31,288- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:21:31,386- execSQL: select newPrice from discountConf where shopItems =  ?  =98
+ INFO 29 十月 10:21:31,483- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =97
+ INFO 29 十月 10:21:31,585- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:21:31,679- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:21:31,782- execSQL: select newPrice from discountConf where shopItems =  ?  =101
+ INFO 29 十月 10:21:31,881- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =99
+ INFO 29 十月 10:21:31,965- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:21:32,051- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:21:32,133- execSQL: select newPrice from discountConf where shopItems =  ?  =82
+ INFO 29 十月 10:21:32,216- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =82
+ INFO 29 十月 10:21:32,310- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:21:32,397- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:21:32,487- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:32,576- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =89
+ INFO 29 十月 10:21:32,674- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =98
+ INFO 29 十月 10:21:32,767- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:21:32,869- execSQL: select newPrice from discountConf where shopItems =  ?  =101
+ INFO 29 十月 10:21:32,962- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =93
+ INFO 29 十月 10:21:33,114- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =151
+ INFO 29 十月 10:21:33,321- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.blue'  	and lv in (1,10,20,25,30,35,40,45,50,60,70,80,90,100)  =207
+ INFO 29 十月 10:21:33,401- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:21:33,482- execSQL: select newPrice from discountConf where shopItems =  ?  =81
+ INFO 29 十月 10:21:33,563- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =81
+ INFO 29 十月 10:21:33,643- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 29 十月 10:21:33,725- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:21:33,807- execSQL: select newPrice from discountConf where shopItems =  ?  =81
+ INFO 29 十月 10:21:33,886- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =79
+ INFO 29 十月 10:21:33,969- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =83
+ INFO 29 十月 10:21:34,050- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:21:34,133- execSQL: select newPrice from discountConf where shopItems =  ?  =83
+ INFO 29 十月 10:21:34,214- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =81
+ INFO 29 十月 10:21:34,301- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:21:34,389- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:21:34,478- execSQL: select newPrice from discountConf where shopItems =  ?  =89
+ INFO 29 十月 10:21:34,573- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =94
+ INFO 29 十月 10:21:34,665- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:21:34,756- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:21:34,852- execSQL: select newPrice from discountConf where shopItems =  ?  =95
+ INFO 29 十月 10:21:34,948- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =96
+ INFO 29 十月 10:21:35,517- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =568
+ INFO 29 十月 10:21:35,610- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =93
+ INFO 29 十月 10:21:35,698- execSQL: select newPrice from discountConf where shopItems =  ?  =88
+ INFO 29 十月 10:21:35,795- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =97
+ INFO 29 十月 10:21:35,887- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:21:35,983- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =95
+ INFO 29 十月 10:21:36,084- execSQL: select newPrice from discountConf where shopItems =  ?  =101
+ INFO 29 十月 10:21:36,182- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =97
+ INFO 29 十月 10:21:36,285- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =103
+ INFO 29 十月 10:21:36,385- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =100
+ INFO 29 十月 10:21:36,481- execSQL: select newPrice from discountConf where shopItems =  ?  =95
+ INFO 29 十月 10:21:36,565- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =83
+ INFO 29 十月 10:21:36,647- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =82
+ INFO 29 十月 10:21:36,735- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:21:36,837- execSQL: select newPrice from discountConf where shopItems =  ?  =101
+ INFO 29 十月 10:21:36,941- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =104
+ INFO 29 十月 10:21:37,031- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =90
+ INFO 29 十月 10:21:37,119- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:21:37,202- execSQL: select newPrice from discountConf where shopItems =  ?  =82
+ INFO 29 十月 10:21:37,298- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =96
+ INFO 29 十月 10:21:37,389- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:21:37,483- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 29 十月 10:21:37,565- execSQL: select newPrice from discountConf where shopItems =  ?  =82
+ INFO 29 十月 10:21:37,659- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =94
+ INFO 29 十月 10:21:37,750- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =91
+ INFO 29 十月 10:21:37,841- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:21:37,943- execSQL: select newPrice from discountConf where shopItems =  ?  =101
+ INFO 29 十月 10:21:38,038- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =95
+ INFO 29 十月 10:21:38,140- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =102
+ INFO 29 十月 10:21:38,239- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:21:38,343- execSQL: select newPrice from discountConf where shopItems =  ?  =104
+ INFO 29 十月 10:21:38,443- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =100
+ INFO 29 十月 10:21:38,540- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:21:38,625- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:21:38,711- execSQL: select newPrice from discountConf where shopItems =  ?  =85
+ INFO 29 十月 10:21:38,796- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =85
+ INFO 29 十月 10:21:38,881- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:21:39,058- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.purple'  	and lv in (1,10,20,25,30,35,40,45,50,60,70,80,90,100)  =176
+ INFO 29 十月 10:21:39,157- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:21:39,257- execSQL: select newPrice from discountConf where shopItems =  ?  =100
+ INFO 29 十月 10:21:39,358- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =101
+ INFO 29 十月 10:21:39,451- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 29 十月 10:21:39,536- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =85
+ INFO 29 十月 10:21:39,619- execSQL: select newPrice from discountConf where shopItems =  ?  =82
+ INFO 29 十月 10:21:39,698- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =79
+ INFO 29 十月 10:21:39,779- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:21:39,859- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:21:39,939- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 29 十月 10:21:40,020- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =80
+ INFO 29 十月 10:21:40,100- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:21:40,181- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:21:40,266- execSQL: select newPrice from discountConf where shopItems =  ?  =85
+ INFO 29 十月 10:21:40,347- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =81
+ INFO 29 十月 10:21:40,433- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:21:40,512- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 29 十月 10:21:40,592- execSQL: select newPrice from discountConf where shopItems =  ?  =79
+ INFO 29 十月 10:21:40,676- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =83
+ INFO 29 十月 10:21:40,761- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:21:40,848- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:21:40,930- execSQL: select newPrice from discountConf where shopItems =  ?  =81
+ INFO 29 十月 10:21:41,018- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =88
+ INFO 29 十月 10:21:41,098- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 29 十月 10:21:41,190- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 29 十月 10:21:41,280- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:41,379- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =98
+ INFO 29 十月 10:21:41,478- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =99
+ INFO 29 十月 10:21:41,579- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =100
+ INFO 29 十月 10:21:42,145- execSQL: select newPrice from discountConf where shopItems =  ?  =566
+ INFO 29 十月 10:21:42,252- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =106
+ INFO 29 十月 10:21:42,386- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =133
+ INFO 29 十月 10:21:42,530- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =144
+ INFO 29 十月 10:21:42,642- execSQL: select newPrice from discountConf where shopItems =  ?  =111
+ INFO 29 十月 10:21:42,733- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =91
+ INFO 29 十月 10:21:42,821- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =87
+ INFO 29 十月 10:21:42,900- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 29 十月 10:21:42,988- execSQL: select newPrice from discountConf where shopItems =  ?  =88
+ INFO 29 十月 10:21:43,073- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =85
+ INFO 29 十月 10:21:43,160- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =86
+ INFO 29 十月 10:21:43,248- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:21:43,338- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:43,430- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =91
+ INFO 29 十月 10:21:43,515- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:21:43,614- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =98
+ INFO 29 十月 10:21:43,702- execSQL: select newPrice from discountConf where shopItems =  ?  =87
+ INFO 29 十月 10:21:43,791- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =88
+ INFO 29 十月 10:21:43,876- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84
+ INFO 29 十月 10:21:43,958- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:21:44,044- execSQL: select newPrice from discountConf where shopItems =  ?  =85
+ INFO 29 十月 10:21:44,128- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =84
+ INFO 29 十月 10:21:44,216- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =88
+ INFO 29 十月 10:21:44,305- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =89
+ INFO 29 十月 10:21:44,400- execSQL: select newPrice from discountConf where shopItems =  ?  =95
+ INFO 29 十月 10:21:44,492- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =91
+ INFO 29 十月 10:21:44,598- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =106
+ INFO 29 十月 10:21:44,775- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.orange'  	and lv in (1,10,20,25,30,35,40,45,50,60,70,80,90,100)  =177
+ INFO 29 十月 10:21:44,862- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =86
+ INFO 29 十月 10:21:44,952- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:45,032- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =80
+ INFO 29 十月 10:21:45,125- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:21:45,224- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =98
+ INFO 29 十月 10:21:45,319- execSQL: select newPrice from discountConf where shopItems =  ?  =95
+ INFO 29 十月 10:21:45,411- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =92
+ INFO 29 十月 10:21:45,508- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:21:46,086- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =578
+ INFO 29 十月 10:21:46,177- execSQL: select newPrice from discountConf where shopItems =  ?  =91
+ INFO 29 十月 10:21:46,265- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =88
+ INFO 29 十月 10:21:46,351- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:21:46,442- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:21:46,536- execSQL: select newPrice from discountConf where shopItems =  ?  =93
+ INFO 29 十月 10:21:46,627- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =91
+ INFO 29 十月 10:21:46,721- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =93
+ INFO 29 十月 10:21:46,820- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =99
+ INFO 29 十月 10:21:46,920- execSQL: select newPrice from discountConf where shopItems =  ?  =100
+ INFO 29 十月 10:21:47,009- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =89
+ INFO 29 十月 10:21:47,089- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 29 十月 10:21:47,171- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 29 十月 10:21:47,252- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 29 十月 10:21:47,338- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =86
+ INFO 29 十月 10:21:47,433- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 29 十月 10:21:47,529- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =96
+ INFO 29 十月 10:21:47,619- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:47,716- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =96
+ INFO 29 十月 10:21:47,817- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =100
+ INFO 29 十月 10:21:47,923- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =106
+ INFO 29 十月 10:21:48,018- execSQL: select newPrice from discountConf where shopItems =  ?  =95
+ INFO 29 十月 10:21:48,103- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =85
+ INFO 29 十月 10:21:48,184- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 29 十月 10:21:48,265- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 29 十月 10:21:48,345- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 29 十月 10:21:48,430- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =85
+ INFO 29 十月 10:21:48,526- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =96
+ INFO 29 十月 10:21:48,618- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =92
+ INFO 29 十月 10:21:48,716- execSQL: select newPrice from discountConf where shopItems =  ?  =98
+ INFO 29 十月 10:21:48,813- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =97
+ INFO 29 十月 10:21:48,921- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =108
+ INFO 29 十月 10:21:49,029- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =108
+ INFO 29 十月 10:21:49,133- execSQL: select newPrice from discountConf where shopItems =  ?  =104
+ INFO 29 十月 10:21:49,217- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =84
+ INFO 29 十月 10:21:49,302- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =85
+ INFO 29 十月 10:21:49,393- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =90
+ INFO 29 十月 10:21:49,473- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 29 十月 10:21:49,566- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =92
+ INFO 29 十月 10:21:49,656- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =90
+ INFO 29 十月 10:21:49,745- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =88
+ INFO 29 十月 10:21:49,836- execSQL: select newPrice from discountConf where shopItems =  ?  =90
+ INFO 29 十月 10:21:49,983- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =146
+ INFO 29 十月 10:21:50,138- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =155
+ INFO 29 十月 10:21:50,280- execSQLUpdate: update discountConf set newPrice = listPrice * 64 / 100 ,[percent] = ?  where shopItems =  ? =142
+ INFO 29 十月 10:21:50,434- execSQL: select newPrice from discountConf where shopItems =  ?  =154
+ INFO 29 十月 10:21:50,556- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =122
+ INFO 29 十月 10:21:50,653- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =97
+ INFO 29 十月 10:21:58,677- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =90
+ INFO 29 十月 10:21:59,942- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =109
+ INFO 29 十月 10:22:00,123- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =181
+ INFO 29 十月 10:22:00,223- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =100
+ INFO 29 十月 10:22:01,635- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =98
+ INFO 29 十月 10:22:01,730- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =94
+ INFO 29 十月 10:22:01,814- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =84
+ INFO 29 十月 10:28:47,934- doExecSQLQuery: select startTime,status from functionOnlineConf where name = 'invitationFriend'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =998
+ INFO 29 十月 10:40:46,409- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =499
+ INFO 29 十月 10:40:55,627- doExecSQLQuery: select startTime,status from functionOnlineConf where name = 'equipmentLuckyDraw'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =170

@@ -1,0 +1,56 @@
+ INFO 19 八月 20:20:00,086- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ERROR 19 八月 20:20:00,086- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Connection reset by peer: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:406)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:146)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:167)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:199)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.getAllActivity(ActivityListServiceImpl.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 34 more
+ INFO 19 八月 20:21:01,555- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =162
+ INFO 19 八月 20:23:51,690- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 19 八月 20:24:29,555- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 19 八月 20:26:12,467- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 19 八月 20:28:00,636- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =204
+ INFO 19 八月 20:28:51,834- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 19 八月 20:33:26,984- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 19 八月 20:44:21,871- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1

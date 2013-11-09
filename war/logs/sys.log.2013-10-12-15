@@ -1,0 +1,16 @@
+ INFO 12 十月 15:29:03,806 -(            HttpUtil.java:  21) - doGet http://192.168.128.113:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 12 十月 15:29:06,809 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.128.113:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 12 十月 15:29:06,809 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 12 十月 15:29:06,811 -(             GameAPI.java:  43) - java.net.SocketTimeoutException: connect timed out
+ INFO 12 十月 15:40:26,342 -(            HttpUtil.java:  21) - doGet http://192.168.128.113:8080/gameapi?action=REMOVE_FISHER_CACHE
+ERROR 12 十月 15:40:29,344 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.128.113:8080/gameapi?action=REMOVE_FISHER_CACHE
+ERROR 12 十月 15:40:29,344 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 12 十月 15:40:29,346 -(             GameAPI.java:  43) - java.net.SocketTimeoutException: connect timed out
+ INFO 12 十月 15:40:29,553 -(            HttpUtil.java:  21) - doGet http://192.168.128.113:8080/gameapi?action=REMOVE_DAILYEVENT_CACHE
+ERROR 12 十月 15:40:32,554 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.128.113:8080/gameapi?action=REMOVE_DAILYEVENT_CACHE
+ERROR 12 十月 15:40:32,554 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 12 十月 15:40:32,556 -(             GameAPI.java:  43) - java.net.SocketTimeoutException: connect timed out
+ INFO 12 十月 15:40:32,718 -(            HttpUtil.java:  21) - doGet http://192.168.128.113:8080/gameapi?action=REMOVE_CHECKIN_CACHE
+ERROR 12 十月 15:40:35,719 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.128.113:8080/gameapi?action=REMOVE_CHECKIN_CACHE
+ERROR 12 十月 15:40:35,719 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 12 十月 15:40:35,721 -(             GameAPI.java:  43) - java.net.SocketTimeoutException: connect timed out

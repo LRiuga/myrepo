@@ -1,0 +1,2 @@
+ INFO 10 十月 13:58:12,005- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =909
+ INFO 10 十月 13:59:07,926- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82

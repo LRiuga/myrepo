@@ -1,0 +1,6 @@
+ INFO 10 九月 16:21:09,171- doExecSQLQuery: select top 1   password from oa_admin where userName = ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =94
+ INFO 10 九月 16:21:09,267- doExecSQLQuery:  select top 1 hashbytes('MD5','123456')   from oa_admin@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =94
+ INFO 10 九月 16:21:15,786- doExecSQLQuery: select top 1   password from oa_admin where userName = ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =76
+ INFO 10 九月 16:21:15,864- doExecSQLQuery:  select top 1 hashbytes('MD5','123456')   from oa_admin@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 10 九月 16:30:46,996- doExecSQLQuery: select top 1   password from oa_admin where userName = ?@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 10 九月 16:30:47,077- doExecSQLQuery:  select top 1 hashbytes('MD5','123456')   from oa_admin@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =81

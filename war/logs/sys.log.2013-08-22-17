@@ -1,0 +1,7 @@
+ INFO 22 八月 17:20:29,966 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11007
+ INFO 22 八月 17:22:43,401 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11007
+ INFO 22 八月 17:23:02,279 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11008
+ INFO 22 八月 17:27:02,187 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11009
+ INFO 22 八月 17:45:40,684 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11010
+ INFO 22 八月 17:48:20,008 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11011
+ INFO 22 八月 17:51:08,730 -(            HttpUtil.java:  21) - doGet http://192.168.50.43:8087/gameapi?action=REMOVE_BLACKLIST_CACHE&monetId=11012

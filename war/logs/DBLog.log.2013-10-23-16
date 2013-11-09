@@ -1,0 +1,10 @@
+ INFO 23 十月 16:41:44,152- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =1054
+ INFO 23 十月 16:41:45,476- execSQL: select itemid,buy_level,quality from (select id,buy_level,quality from EquipmentType) t1 JOIN (select itemtypeid,itemid from shopitem where itemType = 'Equipment' or itemType = 'combo' ) t2 on t1.id = t2.itemtypeid =699
+ INFO 23 十月 16:41:45,765- execSQL: select shopitems from discountConf where discountType = ? =288
+ INFO 23 十月 16:41:46,280- execSQL: select itemid,buy_level,quality from (select id,buy_level,quality from EquipmentType) t1 JOIN (select itemtypeid,itemid from shopitem where itemType = 'Equipment' or itemType = 'combo' ) t2 on t1.id = t2.itemtypeid =263
+ INFO 23 十月 16:41:46,406- execSQL: select shopitems from discountConf where discountType = ? =125
+ INFO 23 十月 16:49:23,711- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 23 十月 16:49:24,977- execSQL: select itemid,buy_level,quality from (select id,buy_level,quality from EquipmentType) t1 JOIN (select itemtypeid,itemid from shopitem where itemType = 'Equipment' or itemType = 'combo' ) t2 on t1.id = t2.itemtypeid =157
+ INFO 23 十月 16:49:25,055- execSQL: select shopitems from discountConf where discountType = ? =78
+ INFO 23 十月 16:49:26,164- execSQL: select itemid,buy_level,quality from (select id,buy_level,quality from EquipmentType) t1 JOIN (select itemtypeid,itemid from shopitem where itemType = 'Equipment' or itemType = 'combo' ) t2 on t1.id = t2.itemtypeid =157
+ INFO 23 十月 16:49:26,242- execSQL: select shopitems from discountConf where discountType = ? =78

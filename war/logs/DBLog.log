@@ -1,0 +1,85 @@
+ INFO 04 十一月 18:08:55,806- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =569
+ERROR 04 十一月 18:09:14,215- execSQLUpdate error
+java.sql.SQLException: Incorrect syntax near 'value'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:283)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.saveFisherConf(ActivityListServiceImpl.java:470)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 04 十一月 18:09:14,218- execSQLUpdate: insert into _activityFishingScoreConf(activity_id,fish_type,fish_score,daily_norm,daily_rewardType,daily_rewardCount) value(?,?,?,?,?,?)  =168
+ INFO 04 十一月 18:11:31,819- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =506
+ INFO 04 十一月 18:11:40,141- execSQLUpdate: insert into _activityFishingScoreConf(activity_id,fish_type,fish_score,daily_norm,daily_rewardType,daily_rewardCount) values(?,?,?,?,?,?)  =167
+ INFO 04 十一月 18:11:42,054- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =84
+ INFO 04 十一月 18:15:46,992- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =170
+ INFO 04 十一月 18:15:47,625- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =693
+ INFO 04 十一月 18:15:47,797- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =167
+ INFO 04 十一月 18:16:10,787- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =175
+ INFO 04 十一月 18:16:11,122- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =410
+ INFO 04 十一月 18:16:11,287- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =164
+ INFO 04 十一月 18:18:16,660- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 04 十一月 18:18:16,761- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 04 十一月 18:18:16,850- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =89
+ INFO 04 十一月 18:19:08,687- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =170
+ INFO 04 十一月 18:19:33,621- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 04 十一月 18:20:49,229- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =90
+ INFO 04 十一月 18:21:35,559- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =90
+ INFO 04 十一月 18:21:35,660- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82
+ INFO 04 十一月 18:21:35,746- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =85
+ INFO 04 十一月 18:22:08,433- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 04 十一月 18:22:50,666- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82
+ INFO 04 十一月 18:23:51,997- execSQLUpdate: insert into _activityFishingScoreConf(activity_id,fish_type,fish_score,daily_norm,daily_rewardType,daily_rewardCount) values(?,?,?,?,?,?)  =82
+ INFO 04 十一月 18:23:54,249- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 04 十一月 18:24:11,425- execSQLUpdate: insert into _activityFishingScoreConf(activity_id,fish_type,fish_score,daily_norm,daily_rewardType,daily_rewardCount) values(?,?,?,?,?,?)  =81
+ INFO 04 十一月 18:24:14,613- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 04 十一月 18:24:46,753- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =84
+ INFO 04 十一月 18:24:46,859- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82
+ INFO 04 十一月 18:24:46,943- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =83
+ INFO 04 十一月 18:25:28,788- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =82
+ INFO 04 十一月 18:25:28,895- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 04 十一月 18:25:28,981- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =86
+ INFO 04 十一月 18:25:57,714- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 04 十一月 18:40:13,576- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =642
+ INFO 04 十一月 18:40:14,005- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =968
+ INFO 04 十一月 18:40:14,177- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =167
+ INFO 04 十一月 18:40:36,354- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =164
+ INFO 04 十一月 18:40:36,516- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =162
+ INFO 04 十一月 18:40:36,597- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =81
+ INFO 04 十一月 18:40:36,678- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =80
+ INFO 04 十一月 18:40:36,760- execSQLUpdate: insert into  _activity(activity_name,activity_open,activity_close,parent_id,assign_reward) values(?,?,?,?,?) =81
+ INFO 04 十一月 18:40:36,846- doExecSQLQuery: select IDENT_CURRENT('_activity') @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =85
+ INFO 04 十一月 18:40:43,815- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =163
+ INFO 04 十一月 18:40:44,099- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =338
+ INFO 04 十一月 18:40:44,264- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =164
+ INFO 04 十一月 18:41:03,396- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =228

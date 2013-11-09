@@ -1,0 +1,2 @@
+serviceClass: com.mozat.morange.admin.client.fisher.FisherDataService
+path: D25D61B08A978216F7FBADF9D0A9BFB5.gwt.rpc

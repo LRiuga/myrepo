@@ -1,0 +1,59 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:datepicker="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		td {
+			text-align:center;
+			} 
+	</ui:style>
+	<g:HTMLPanel>
+		<h2>Black User</h2>
+		<table >
+			<tr>
+				<td colspan='3'>User's Information</td>
+			</tr>
+			<tr>
+				<td>Monetid</td>
+				<td><g:TextBox ui:field="monetidBox" enabled="false"></g:TextBox></td>
+			</tr>
+			<!-- <tr>
+				<td>UserName</td>
+				<td><g:TextBox ui:field="userNameBox" enabled="false"></g:TextBox></td>
+			</tr>
+			<tr>
+				<td>UserName</td>
+				<td><g:TextBox ui:field="nickNameBox" enabled="false"></g:TextBox></td>
+			</tr>
+			<tr>
+				<td>Gold</td>
+				<td><g:TextBox ui:field="goldBox" enabled="false"></g:TextBox></td>
+			</tr>
+			<tr>
+				<td>Pearl</td>
+				<td><g:TextBox ui:field="pearlBox" enabled="false"></g:TextBox></td>
+			</tr>
+			<tr>
+				<td>sapphire</td>
+				<td><g:TextBox ui:field="sapphireBox" enabled="false"></g:TextBox></td>
+			</tr>  -->
+			<tr>
+				<td rowspan='2'>Expire Date</td>
+				<td><datepicker:DateBox ui:field="expireDate"></datepicker:DateBox></td>
+				<td><g:RadioButton ui:field="dateRadio1" name="date"/></td>
+			</tr>
+			<tr>
+				<td>Black Forever</td>
+				<td><g:RadioButton ui:field="dateRadio2" name="date"/></td>
+			</tr>
+			<tr>
+				<td>Black Reason</td>
+				<td><g:TextArea ui:field="reasonBox"></g:TextArea></td>
+			</tr>
+		</table>
+			<g:Button ui:field="saveBtn" styleName="style.important">Save</g:Button>	
+	</g:HTMLPanel>
+</ui:UiBinder> 

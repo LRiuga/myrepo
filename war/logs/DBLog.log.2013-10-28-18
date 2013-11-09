@@ -1,0 +1,320 @@
+ INFO 28 十月 18:54:03,333- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =496
+ INFO 28 十月 18:54:04,461- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =407
+ INFO 28 十月 18:54:04,703- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =242
+ INFO 28 十月 18:54:04,865- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =161
+ INFO 28 十月 18:54:05,451- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =161
+ INFO 28 十月 18:54:05,614- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =162
+ INFO 28 十月 18:54:05,775- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =161
+ INFO 28 十月 18:54:13,447- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'Equipment') =175
+ INFO 28 十月 18:54:13,612- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'green'  	and buy_level in (30,90) ) =165
+ INFO 28 十月 18:54:13,775- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =162
+ INFO 28 十月 18:54:13,937- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =161
+ INFO 28 十月 18:54:14,015- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 28 十月 18:54:14,095- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:14,174- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:14,254- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:14,333- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:14,413- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:54:14,493- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:14,573- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:14,653- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:14,734- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =81
+ INFO 28 十月 18:54:14,901- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'blue'  	and buy_level in (30,50,80,90) ) =166
+ INFO 28 十月 18:54:14,980- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 28 十月 18:54:15,060- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:15,140- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 28 十月 18:54:15,219- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:15,298- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 28 十月 18:54:15,378- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:15,457- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:15,537- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:54:15,616- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:15,697- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:54:15,824- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =127
+ INFO 28 十月 18:54:15,958- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =134
+ INFO 28 十月 18:54:16,099- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =140
+ INFO 28 十月 18:54:16,244- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =145
+ INFO 28 十月 18:54:16,388- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =144
+ INFO 28 十月 18:54:16,506- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =118
+ INFO 28 十月 18:54:16,649- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =143
+ INFO 28 十月 18:54:16,729- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:16,808- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:16,888- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:16,968- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:17,047- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:17,131- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =83
+ INFO 28 十月 18:54:17,212- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:54:17,378- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'purple'  	and buy_level in (50,90) ) =166
+ INFO 28 十月 18:54:17,458- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:17,538- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:54:17,617- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:17,697- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:17,778- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =81
+ INFO 28 十月 18:54:17,858- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:17,937- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:18,017- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:18,097- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:18,177- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:18,256- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:18,336- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:54:18,504- execSQL: SELECT itemid FROM 	shopitem WHERE 	itemType = 'Equipment' AND itemTypeId IN ( 	SELECT 		id 	FROM 		EquipmentType 	WHERE 	quality = 'orange'  	and buy_level in (80,90) ) =168
+ INFO 28 十月 18:54:18,583- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:18,663- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:18,743- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 28 十月 18:54:18,822- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:18,902- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:18,981- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:19,061- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:19,140- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:19,219- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:54:19,299- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:54:19,379- execSQLUpdate: update discountConf set newPrice = listPrice * 30 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 28 十月 18:54:19,459- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:55:09,542- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'combo') =180
+ERROR 28 十月 18:55:09,705- execSQL error
+java.sql.SQLException: Invalid object name 'discountConf'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:418)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:206)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveEquipmentDiscountConfig(FriendServiceImpl.java:664)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 28 十月 18:55:09,707- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.green'  	and lv in (1,10)  =164
+ INFO 28 十月 18:56:17,567- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =489
+ INFO 28 十月 18:56:18,742- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =404
+ INFO 28 十月 18:56:18,983- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =241
+ INFO 28 十月 18:56:19,145- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =162
+ INFO 28 十月 18:56:19,774- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =160
+ INFO 28 十月 18:56:19,935- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =160
+ INFO 28 十月 18:56:20,094- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =158
+ INFO 28 十月 18:56:34,192- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'combo') =162
+ INFO 28 十月 18:56:34,353- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.green'  	and lv in (10)  =160
+ INFO 28 十月 18:56:34,513- execSQLUpdate: update discountConf set newPrice = listPrice * 20 / 100 ,[percent] = ?  where shopItems =  ? =160
+ INFO 28 十月 18:56:34,674- execSQL: select newPrice from discountConf where shopItems =  ?  =160
+ERROR 28 十月 18:56:34,835- execSQL error
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:429)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:206)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveEquipmentDiscountConfig(FriendServiceImpl.java:685)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 28 十月 18:56:34,837- execSQL: update shopitem set creditPrice  = ? where itemid = ?  =162
+ INFO 28 十月 18:56:34,998- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =161
+ INFO 28 十月 18:56:35,165- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.blue'  	and lv in (10)  =167
+ INFO 28 十月 18:56:35,253- execSQLUpdate: update discountConf set newPrice = listPrice * 20 / 100 ,[percent] = ?  where shopItems =  ? =87
+ INFO 28 十月 18:56:35,341- execSQL: select newPrice from discountConf where shopItems =  ?  =88
+ERROR 28 十月 18:56:35,429- execSQL error
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:429)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:206)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveEquipmentDiscountConfig(FriendServiceImpl.java:685)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 28 十月 18:56:35,430- execSQL: update shopitem set creditPrice  = ? where itemid = ?  =89
+ INFO 28 十月 18:56:35,525- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =95
+ INFO 28 十月 18:56:35,704- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.purple'  	and lv in (10)  =179
+ INFO 28 十月 18:56:35,796- execSQLUpdate: update discountConf set newPrice = listPrice * 20 / 100 ,[percent] = ?  where shopItems =  ? =91
+ INFO 28 十月 18:56:35,886- execSQL: select newPrice from discountConf where shopItems =  ?  =89
+ERROR 28 十月 18:56:35,978- execSQL error
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:429)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:206)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveEquipmentDiscountConfig(FriendServiceImpl.java:685)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 28 十月 18:56:35,979- execSQL: update shopitem set creditPrice  = ? where itemid = ?  =92
+ INFO 28 十月 18:56:36,072- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =92
+ INFO 28 十月 18:56:36,261- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.orange'  	and lv in (10)  =189
+ INFO 28 十月 18:56:36,355- execSQLUpdate: update discountConf set newPrice = listPrice * 20 / 100 ,[percent] = ?  where shopItems =  ? =94
+ INFO 28 十月 18:56:36,448- execSQL: select newPrice from discountConf where shopItems =  ?  =93
+ERROR 28 十月 18:56:36,548- execSQL error
+java.sql.SQLException: The executeQuery method must return a result set.
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:429)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:206)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveEquipmentDiscountConfig(FriendServiceImpl.java:685)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 28 十月 18:56:36,550- execSQL: update shopitem set creditPrice  = ? where itemid = ?  =101
+ INFO 28 十月 18:56:36,644- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =94
+ INFO 28 十月 18:59:07,576- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =487
+ INFO 28 十月 18:59:08,722- execSQL: select distinct buy_level, quality from ( select id ,buy_level,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem where itemtype = 'Equipment' ) t2 on id = itemtypeid JOIN ( 	SELECT shopitemid  from ShopItemViewConfig 	where  pageId = 6 and isVisible = 1  ) t3 on t3.shopitemid = t2.itemid  =410
+ INFO 28 十月 18:59:08,887- execSQL: select itemid ,quality from ( select id ,quality from EquipmentType ) t1 join ( select itemid,itemtypeid from shopitem  where itemtype = 'Equipment' )  t2 on t1.id = t2.itemtypeid  =164
+ INFO 28 十月 18:59:09,051- execSQL: select shopitems ,[percent] from  discountConf where discountType = 1 =163
+ INFO 28 十月 18:59:09,717- execSQL: select shopitemid from ShopItemViewConfig where pageId = 6 and isVisible = 1 =178
+ INFO 28 十月 18:59:09,878- execSQL: select lv,title,shopitems from discountConf where discountType = 0  =160
+ INFO 28 十月 18:59:10,037- execSQL: select  title ,avg([percent]) [percent]  from  discountConf where discountType = 0 GROUP BY title =159
+ INFO 28 十月 18:59:33,621- execSQLUpdate: update ShopItemViewConfig set isVisible = 0 where pageId = 6 and shopItemId in  (SELECT itemid from shopitem where itemType = 'combo') =161
+ INFO 28 十月 18:59:33,786- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.green'  	and lv in (10,20)  =164
+ INFO 28 十月 18:59:33,947- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =161
+ INFO 28 十月 18:59:34,106- execSQL: select newPrice from discountConf where shopItems =  ?  =158
+ INFO 28 十月 18:59:34,268- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =161
+ INFO 28 十月 18:59:34,428- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =160
+ INFO 28 十月 18:59:34,507- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:59:34,589- execSQL: select newPrice from discountConf where shopItems =  ?  =81
+ INFO 28 十月 18:59:34,668- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =78
+ INFO 28 十月 18:59:34,748- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:59:34,909- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.blue'  	and lv in (10,20,25,30)  =161
+ INFO 28 十月 18:59:34,989- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 28 十月 18:59:35,068- execSQL: select newPrice from discountConf where shopItems =  ?  =79
+ INFO 28 十月 18:59:35,147- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =78
+ INFO 28 十月 18:59:35,228- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:59:35,308- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 28 十月 18:59:35,388- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 28 十月 18:59:35,468- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =80
+ INFO 28 十月 18:59:35,548- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:59:35,628- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =80
+ INFO 28 十月 18:59:35,708- execSQL: select newPrice from discountConf where shopItems =  ?  =79
+ INFO 28 十月 18:59:35,787- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =79
+ INFO 28 十月 18:59:35,866- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:59:35,946- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:59:36,026- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 28 十月 18:59:36,106- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =80
+ INFO 28 十月 18:59:36,186- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =79
+ INFO 28 十月 18:59:36,346- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.purple'  	and lv in (10)  =160
+ INFO 28 十月 18:59:36,426- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =79
+ INFO 28 十月 18:59:36,506- execSQL: select newPrice from discountConf where shopItems =  ?  =80
+ INFO 28 十月 18:59:36,586- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =79
+ INFO 28 十月 18:59:36,666- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =80
+ INFO 28 十月 18:59:36,823- execSQL: SELECT  shopitems from discountConf where 	title = 'combo.orange'  	and lv in (10)  =157
+ INFO 28 十月 18:59:36,902- execSQLUpdate: update discountConf set newPrice = listPrice * 24 / 100 ,[percent] = ?  where shopItems =  ? =78
+ INFO 28 十月 18:59:36,982- execSQL: select newPrice from discountConf where shopItems =  ?  =79
+ INFO 28 十月 18:59:37,062- execSQLUpdate: update shopitem set creditPrice  = ? where itemid = ?  =80
+ INFO 28 十月 18:59:37,146- execSQLUpdate: update ShopItemViewConfig set isVisible = 1 where pageId = 6 and shopItemId = ?   =84

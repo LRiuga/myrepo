@@ -1,0 +1,97 @@
+ INFO 29 十月 12:03:10,975- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =640
+ INFO 29 十月 12:03:11,368- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =969
+ INFO 29 十月 12:03:11,539- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =166
+ INFO 29 十月 12:03:28,525- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 29 十月 12:03:28,692- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =167
+ INFO 29 十月 12:04:14,141- execSQLUpdate: insert into Equipment(monet_id,type_id,expire_date,status,msg,reinforce_count) values(?,?,?,?,?,?) =224
+ INFO 29 十月 12:04:14,231- execSQLUpdate: insert into Equipment(monet_id,type_id,expire_date,status,msg,reinforce_count) values(?,?,?,?,?,?) =90
+ INFO 29 十月 12:04:14,403- execSQLUpdate: insert into _activityUserData(activityConfid,monetid,point,gotReward,createTime,updateTime,originPoint1,originPoint2)values(?,?,?,?,?,?,?,?) =171
+ INFO 29 十月 12:04:14,491- execSQLUpdate: insert into _activityUserData(activityConfid,monetid,point,gotReward,createTime,updateTime,originPoint1,originPoint2)values(?,?,?,?,?,?,?,?) =87
+ INFO 29 十月 12:05:51,170- doExecSQLQuery: select top 300 monetid from _activityUserData where activityconfid = ? order by point desc  @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 29 十月 12:05:51,173- execSQLQuery (true) error
+java.sql.SQLException: Parameter #1 has not been set.
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.prepareSQL(ConnectionJDBC2.java:602)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:692)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:177)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:256)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.saveHuang(ActivityListServiceImpl.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 29 十月 12:07:16,507- doExecSQLQuery: select id,activity_name from _activity where parent_id !=  0 @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =281
+ INFO 29 十月 12:07:16,739- doExecSQLQuery: select count(*) as num from _activityReward @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =404
+ INFO 29 十月 12:07:17,133- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  RowNumber > ? order by id desc @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =394
+ INFO 29 十月 12:07:17,209- doExecSQLQuery: select itemId,itemCreditText from shopitem@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1014
+ INFO 29 十月 12:07:17,528- doExecSQLQuery: select id,itemCreditText,userLevel,quality from ( select itemtypeid,itemCreditText,userLevel FROM shopitem WHERE itemType = 'Equipment' and itemCreditText not LIKE 'Lucky%' )a JOIN (select id,quality from EquipmentType ) b on a.itemtypeid = b.id@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1302
+ INFO 29 十月 12:07:17,683- doExecSQLQuery: select id,ship_name from shiptype@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =1473
+ INFO 29 十月 12:07:26,232- doExecSQLQuery: select count(*) as num from _activityReward where activity_id = 166@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =321
+ INFO 29 十月 12:07:26,554- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  _activityReward) a WHERE  activity_id = 166 and RowNumber >? order by id desc @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =321
+ INFO 29 十月 12:08:58,599- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 29 十月 12:08:58,777- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =162
+ INFO 29 十月 12:08:58,943- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =165
+ INFO 29 十月 12:09:11,852- doExecSQLQuery: select top 300 monetid from _activityUserData where activityconfid = ? order by point desc  @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =0
+ERROR 29 十月 12:09:11,853- execSQLQuery (true) error
+java.sql.SQLException: Parameter #1 has not been set.
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.prepareSQL(ConnectionJDBC2.java:602)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:692)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:177)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:256)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.saveHuang(ActivityListServiceImpl.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 29 十月 12:14:02,671- doExecSQLQuery: select top 300 monetid from _activityUserData where activityconfid = ? order by point desc  @jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =490
+ INFO 29 十月 12:14:02,844- execSQLUpdate: insert into Equipment(monet_id,type_id,expire_date,status,msg,reinforce_count) values(?,?,?,?,?,?) =173
+ INFO 29 十月 12:14:02,922- execSQLUpdate: insert into Equipment(monet_id,type_id,expire_date,status,msg,reinforce_count) values(?,?,?,?,?,?) =78
+ INFO 29 十月 12:14:03,093- execSQLUpdate: insert into _activityUserData(activityConfid,monetid,point,gotReward,createTime,updateTime,originPoint1,originPoint2)values(?,?,?,?,?,?,?,?) =171
+ INFO 29 十月 12:14:03,171- execSQLUpdate: insert into _activityUserData(activityConfid,monetid,point,gotReward,createTime,updateTime,originPoint1,originPoint2)values(?,?,?,?,?,?,?,?) =78

@@ -1,0 +1,114 @@
+ INFO 26 八月 12:29:35,716- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =2
+ERROR 26 八月 12:29:35,719- execSQLQuery db(0) error
+java.sql.SQLException: I/O Error: Software caused connection abort: socket write error
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1049)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:406)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:146)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:167)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:199)
+	at com.mozat.morange.admin.server.fisher.Fisher.get(Fisher.java:120)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.handler(FisherDataServiceImpl.java:36)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.update(FisherDataServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at java.io.DataOutputStream.write(Unknown Source)
+	at net.sourceforge.jtds.jdbc.SharedSocket.sendNetPacket(SharedSocket.java:656)
+	at net.sourceforge.jtds.jdbc.RequestStream.putPacket(RequestStream.java:560)
+	at net.sourceforge.jtds.jdbc.RequestStream.flush(RequestStream.java:508)
+	at net.sourceforge.jtds.jdbc.TdsCore.executeSQL(TdsCore.java:1036)
+	... 36 more
+ INFO 26 八月 12:29:36,107- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =386
+ INFO 26 八月 12:29:36,259- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =152
+ERROR 26 八月 12:29:36,413- execSQL error
+java.sql.SQLException: Cannot open database "public_domain2" requested by the login. The login failed.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.login(TdsCore.java:599)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC2.<init>(ConnectionJDBC2.java:331)
+	at net.sourceforge.jtds.jdbc.ConnectionJDBC3.<init>(ConnectionJDBC3.java:50)
+	at net.sourceforge.jtds.jdbc.Driver.connect(Driver.java:178)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.apache.commons.dbcp.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:46)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:771)
+	at org.apache.commons.dbcp.PoolingDriver.connect(PoolingDriver.java:175)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.mozat.morange.util.MoDB.getConnection(MoDB.java:58)
+	at com.mozat.morange.util.MoDBRW.execSQL(MoDBRW.java:105)
+	at com.mozat.morange.admin.server.fisher.Fisher.get(Fisher.java:156)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.handler(FisherDataServiceImpl.java:36)
+	at com.mozat.morange.admin.server.fisher.FisherDataServiceImpl.update(FisherDataServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 26 八月 12:29:36,413- execSQL: select user_name from user_info where user_id=? =153
+ INFO 26 八月 12:30:26,874- doExecSQLQuery: select top 1   password from oa_admin where userName = ?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAgeConfig_n3;user=mozone;password=morangerunmozone;useLOBs=false =1209
+ INFO 26 八月 12:30:27,093- doExecSQLQuery:  select top 1 hashbytes('MD5','hjp001')   from oa_admin@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAgeConfig_n3;user=mozone;password=morangerunmozone;useLOBs=false =219
+ INFO 26 八月 12:30:36,103- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =1397
+ INFO 26 八月 12:30:36,650- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =547
+ INFO 26 八月 12:30:37,196- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =546
+ INFO 26 八月 12:30:38,589- execSQL: select user_name from user_info where user_id=? =1393
+ INFO 26 八月 12:33:19,809- doExecSQLQuery: select top 1   password from oa_admin where userName = ?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAgeConfig_n3;user=mozone;password=morangerunmozone;useLOBs=false =567
+ INFO 26 八月 12:33:19,989- doExecSQLQuery:  select top 1 hashbytes('MD5','hjp001')   from oa_admin@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAgeConfig_n3;user=mozone;password=morangerunmozone;useLOBs=false =179
+ INFO 26 八月 12:33:40,527- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =882
+ INFO 26 八月 12:33:40,942- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =415
+ INFO 26 八月 12:33:41,355- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.14:41188/OceanAge_n3;user=mozone;password=morangerunmozone;useLOBs=false =412
+ INFO 26 八月 12:33:42,373- execSQL: select user_name from user_info where user_id=? =1017

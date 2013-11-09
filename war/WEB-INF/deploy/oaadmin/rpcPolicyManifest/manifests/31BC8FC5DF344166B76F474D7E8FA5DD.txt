@@ -1,0 +1,2 @@
+serviceClass: com.mozat.morange.admin.client.black.BlackListService
+path: DFF2AD38FA8960FCD773CB36AF0DF716.gwt.rpc

@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		td {
+			text-align: center;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<h2>User Login</h2>
+		<table>
+			<tr>
+				<td colspan='2'>请输入你的用户名和密码</td>
+			</tr>
+			<tr>
+				<td>UserName</td>
+				<td>
+					<g:TextBox ui:field="userBox" ></g:TextBox>
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>
+					<g:PasswordTextBox ui:field="passBox" ></g:PasswordTextBox>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+				<g:Button styleName="style.important" ui:field="loginBtn">Login</g:Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<g:Button styleName="style.important" ui:field="resetBtn">Reset</g:Button>
+				</td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

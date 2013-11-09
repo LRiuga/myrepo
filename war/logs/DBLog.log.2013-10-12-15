@@ -1,0 +1,150 @@
+ INFO 12 十月 15:28:50,394- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =801
+ INFO 12 十月 15:29:02,227- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 0 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid ) =183
+ INFO 12 十月 15:29:02,404- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =177
+ INFO 12 十月 15:29:02,482- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:29:02,559- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:02,636- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =76
+ INFO 12 十月 15:29:02,714- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:02,792- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:29:02,870- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:29:02,947- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:03,025- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:03,102- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:03,179- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =76
+ INFO 12 十月 15:29:03,256- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =76
+ INFO 12 十月 15:29:03,333- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =76
+ INFO 12 十月 15:29:03,410- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:03,488- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:29:03,570- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =82
+ INFO 12 十月 15:29:03,647- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =76
+ INFO 12 十月 15:29:03,726- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:29:03,804- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:29:10,920- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 12 十月 15:29:59,594- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 12 十月 15:30:03,511- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =399
+ INFO 12 十月 15:30:06,381- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 12 十月 15:36:04,358- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =856
+ INFO 12 十月 15:36:16,361- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 0 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid ) =166
+ INFO 12 十月 15:36:16,516- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =154
+ INFO 12 十月 15:36:16,594- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:36:16,671- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:36:16,751- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =79
+ INFO 12 十月 15:36:16,828- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =77
+ INFO 12 十月 15:36:16,907- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =79
+ INFO 12 十月 15:38:51,950- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =86
+ INFO 12 十月 15:38:58,306- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 0 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid ) =90
+ INFO 12 十月 15:38:58,388- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =81
+ INFO 12 十月 15:38:58,471- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =82
+ INFO 12 十月 15:38:58,555- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =84
+ INFO 12 十月 15:38:58,638- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =83
+ INFO 12 十月 15:38:58,717- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:38:58,796- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:38:58,875- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =78
+ INFO 12 十月 15:38:58,959- execSQLUpdate: UPDATE ShopItemViewConfig set isVisible = 1 WHERE shopitemid in ( select itemid from ( SELECT id ,buy_level,quality from EquipmentType where buy_level > 0 ) a JOIN ( select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment' )b on id = itemtypeid where quality = ? and  userlevel = ? ) =83
+ INFO 12 十月 15:39:02,604- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =397
+ INFO 12 十月 15:39:04,961- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig )c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 12 十月 15:40:20,879- doExecSQLQuery: select sum(isVisible) from  ShopItemViewConfig where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone')@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 12 十月 15:40:21,036- doExecSQLQuery: select * from DailyEventSchedule  where id = 3 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 12 十月 15:40:21,195- doExecSQLQuery: SELECT itemtype  from continousCheckInConf WHERE id = 8 and rewardlevel = 5 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =159
+ INFO 12 十月 15:40:26,340- execSQLUpdate: update  ShopItemViewConfig set isVisible = 1  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =154
+ERROR 12 十月 15:40:29,551- execSQLUpdate error
+java.sql.SQLException: Violation of PRIMARY KEY constraint 'PK__DailyEventSchedu__7760A435'. Cannot insert duplicate key in object 'dbo.DailyEventSchedule'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:284)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveFunction(FriendServiceImpl.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 12 十月 15:40:29,553- execSQLUpdate: insert into DailyEventSchedule(id,eventTypeid,startDate,endDate,occurs) values(3,3,'00:00:00','23:59:59',3) =207
+ INFO 12 十月 15:40:32,717- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =161
+ INFO 12 十月 15:41:57,624- doExecSQLQuery: select sum(isVisible) from  ShopItemViewConfig where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone')@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =850
+ INFO 12 十月 15:41:58,009- doExecSQLQuery: select * from DailyEventSchedule  where id = 3 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =384
+ INFO 12 十月 15:41:58,162- doExecSQLQuery: SELECT itemtype  from continousCheckInConf WHERE id = 8 and rewardlevel = 5 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =152
+ INFO 12 十月 15:42:01,051- execSQLUpdate: update  ShopItemViewConfig set isVisible = 0  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =155
+ERROR 12 十月 15:42:01,208- execSQLUpdate error
+java.sql.SQLException: Violation of PRIMARY KEY constraint 'PK__DailyEventSchedu__7760A435'. Cannot insert duplicate key in object 'dbo.DailyEventSchedule'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:284)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveFunction(FriendServiceImpl.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 12 十月 15:42:01,211- execSQLUpdate: insert into DailyEventSchedule(id,eventTypeid,startDate,endDate,occurs) values(3,3,'00:00:00','23:59:59',3) =159
+ INFO 12 十月 15:42:01,364- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =153
+ INFO 12 十月 15:48:03,940- doExecSQLQuery: select sum(isVisible) from  ShopItemViewConfig where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone')@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =843
+ INFO 12 十月 15:48:04,332- doExecSQLQuery: select * from DailyEventSchedule  where id = 3 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =386
+ INFO 12 十月 15:48:04,487- doExecSQLQuery: SELECT itemtype  from continousCheckInConf WHERE id = 8 and rewardlevel = 5 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =154
+ INFO 12 十月 15:48:09,856- execSQLUpdate: delete from DailyEventSchedule  where id = 3 =155
+ INFO 12 十月 15:48:10,014- execSQLUpdate: update  ShopItemViewConfig set isVisible = 1  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =157
+ INFO 12 十月 15:48:10,166- execSQLUpdate: insert into DailyEventSchedule(id,eventTypeid,startDate,endDate,occurs) values(3,3,'00:00:00','23:59:59',3) =152
+ INFO 12 十月 15:48:10,320- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =154
+ INFO 12 十月 15:48:24,684- execSQLUpdate: delete from DailyEventSchedule  where id = 3 =77
+ INFO 12 十月 15:48:24,762- execSQLUpdate: update  ShopItemViewConfig set isVisible = 1  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =77
+ INFO 12 十月 15:48:24,840- execSQLUpdate: delete from DailyEventSchedule  where id = 3 =77
+ INFO 12 十月 15:48:24,917- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =77
+ INFO 12 十月 15:48:29,614- execSQLUpdate: delete from DailyEventSchedule  where id = 3 =76
+ INFO 12 十月 15:48:29,692- execSQLUpdate: update  ShopItemViewConfig set isVisible = 1  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =78
+ INFO 12 十月 15:48:29,769- execSQLUpdate: delete from DailyEventSchedule  where id = 3 =76
+ INFO 12 十月 15:48:29,845- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =76

@@ -1,0 +1,6 @@
+ INFO 19 八月 17:00:20,970- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =120
+ INFO 19 八月 17:03:15,984- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 19 八月 17:03:58,094- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 19 八月 17:05:57,950- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 19 八月 17:12:38,021- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =130
+ INFO 19 八月 17:16:02,683- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0

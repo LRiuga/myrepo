@@ -1,0 +1,8 @@
+ INFO 12 十月 13:54:36,067 -(            HttpUtil.java:  21) - doGet http://192.168.128.113:8080/gameapi?action=REMOVE_AREAN_CACHE
+ERROR 12 十月 13:54:39,071 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.128.113:8080/gameapi?action=REMOVE_AREAN_CACHE
+ERROR 12 十月 13:54:39,071 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 12 十月 13:54:39,087 -(             GameAPI.java:  43) - java.net.SocketTimeoutException: connect timed out
+ INFO 12 十月 13:55:27,220 -(            HttpUtil.java:  21) - doGet http://192.168.128.113:8080/gameapi?action=REMOVE_AREAN_CACHE
+ERROR 12 十月 13:55:30,221 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.128.113:8080/gameapi?action=REMOVE_AREAN_CACHE
+ERROR 12 十月 13:55:30,221 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 12 十月 13:55:30,223 -(             GameAPI.java:  43) - java.net.SocketTimeoutException: connect timed out

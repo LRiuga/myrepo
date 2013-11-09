@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		td {
+			text-align:center;
+			} 
+	</ui:style>
+	<g:HTMLPanel>
+		<g:HorizontalPanel  >
+			<g:HTML styleName="style.important">Search By </g:HTML>
+			<g:ListBox ui:field="searchType"  />
+			<g:SimplePanel ui:field="div">
+			<g:ListBox ui:field="searchKey" />
+			</g:SimplePanel>
+			<g:Button styleName="style.important" ui:field="serchBtn">Search</g:Button>
+		</g:HorizontalPanel  >
+		<g:FlexTable ui:field="rewardList" borderWidth="2" width="95%"></g:FlexTable>
+		<br/>
+		<g:Button styleName="style.important" ui:field="removeBtn">Remove</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder> 

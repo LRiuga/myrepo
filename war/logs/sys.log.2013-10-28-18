@@ -1,0 +1,59 @@
+ INFO 28 十月 18:54:04,294 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@12a4acb
+ INFO 28 十月 18:54:04,462 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1eefe01
+ INFO 28 十月 18:54:04,704 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d725c6
+ INFO 28 十月 18:54:05,291 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1df4541
+ INFO 28 十月 18:54:05,452 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1047fc3
+ INFO 28 十月 18:54:05,614 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@fbaf28
+ INFO 28 十月 18:54:13,448 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1eaa092
+ INFO 28 十月 18:54:14,735 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@a52d96
+ INFO 28 十月 18:54:17,213 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@10f181f
+ INFO 28 十月 18:54:18,337 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@bb25ea
+ INFO 28 十月 18:54:19,466 -(            HttpUtil.java:  21) - doGet http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 28 十月 18:54:22,467 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 28 十月 18:54:22,467 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 28 十月 18:54:22,469 -(             GameAPI.java:  46) - java.net.SocketTimeoutException: connect timed out
+ INFO 28 十月 18:55:09,543 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@14ce66a
+ INFO 28 十月 18:56:18,579 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d83eed
+ INFO 28 十月 18:56:18,742 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@10e6cd5
+ INFO 28 十月 18:56:18,984 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@24f06a
+ INFO 28 十月 18:56:19,614 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@419dd8
+ INFO 28 十月 18:56:19,775 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@3d51f1
+ INFO 28 十月 18:56:19,936 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@16184e2
+ INFO 28 十月 18:56:34,193 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@349414
+ INFO 28 十月 18:56:34,514 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@168e765
+ INFO 28 十月 18:56:34,675 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@124e6d
+ INFO 28 十月 18:56:34,998 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ada9dc
+ INFO 28 十月 18:56:35,253 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@d9d6bc
+ INFO 28 十月 18:56:35,342 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@4e22ba
+ INFO 28 十月 18:56:35,526 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ab459a
+ INFO 28 十月 18:56:35,797 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@915b28
+ INFO 28 十月 18:56:35,887 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@192bee1
+ INFO 28 十月 18:56:36,073 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@6bf16c
+ INFO 28 十月 18:56:36,355 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ad6d85
+ INFO 28 十月 18:56:36,449 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@2254b4
+ INFO 28 十月 18:56:36,647 -(            HttpUtil.java:  21) - doGet http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 28 十月 18:56:39,649 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 28 十月 18:56:39,649 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 28 十月 18:56:39,651 -(             GameAPI.java:  46) - java.net.SocketTimeoutException: connect timed out
+ INFO 28 十月 18:59:08,560 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@bd8eb1
+ INFO 28 十月 18:59:08,723 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@132ccaa
+ INFO 28 十月 18:59:08,888 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@c52d2
+ INFO 28 十月 18:59:09,539 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@d812f3
+ INFO 28 十月 18:59:09,718 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1748c65
+ INFO 28 十月 18:59:09,878 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@106ce71
+ INFO 28 十月 18:59:33,622 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@2ca751
+ INFO 28 十月 18:59:33,948 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1b5e34f
+ INFO 28 十月 18:59:34,508 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@fdfc32
+ INFO 28 十月 18:59:34,749 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@c3c0ec
+ INFO 28 十月 18:59:34,989 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@15e15de
+ INFO 28 十月 18:59:35,308 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1d4c0ba
+ INFO 28 十月 18:59:35,629 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ba6495
+ INFO 28 十月 18:59:35,947 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1a0a074
+ INFO 28 十月 18:59:36,186 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1b95b78
+ INFO 28 十月 18:59:36,426 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1ee8a24
+ INFO 28 十月 18:59:36,666 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1826548
+ INFO 28 十月 18:59:36,903 -(              MoDBRW.java: 205) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@b4a65f
+ INFO 28 十月 18:59:37,148 -(            HttpUtil.java:  21) - doGet http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 28 十月 18:59:40,149 -(            HttpUtil.java:  44) - [doGet] link : http://192.168.1.103:8080/gameapi?action=REMOVE_SHOPCONF_CACHE
+ERROR 28 十月 18:59:40,149 -(            HttpUtil.java:  45) - [doGet] exception : java.net.SocketTimeoutException: connect timed out
+ERROR 28 十月 18:59:40,151 -(             GameAPI.java:  46) - java.net.SocketTimeoutException: connect timed out

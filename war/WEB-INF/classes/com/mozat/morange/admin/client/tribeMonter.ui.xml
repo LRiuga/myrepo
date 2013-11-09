@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:datepicker="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		
+		td {
+			text-align:center;	
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<table class="table table-bordered">
+		<tr>
+			<td><Label>1从</Label></td>
+			<td><Label>星期几</Label></td>
+			<td><Label>time</Label></td>
+			<td><Label>到</Label></td>
+			<td><Label>星期几</Label></td>
+			<td><Label>time</Label></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td><g:TextBox ui:field="beginbox"></g:TextBox></td>
+		<td><datepicker:DateBox ui:field="fromDate" /></td>
+		<td></td>
+		<td><g:TextBox ui:field="endbox"></g:TextBox></td>
+		<td><datepicker:DateBox ui:field="toDate" /></td>
+		</tr>
+		<tr>
+			<td><Label>2从</Label></td>
+			<td><Label>星期几</Label></td>
+			<td><Label>time</Label></td>
+			<td><Label>到</Label></td>
+			<td><Label>星期几</Label></td>
+			<td><Label>time</Label></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td><g:TextBox ui:field="beginbox2"></g:TextBox></td>
+		<td><datepicker:DateBox ui:field="fromDate2" /></td>
+		<td></td>
+		<td><g:TextBox ui:field="endbox2"></g:TextBox></td>
+		<td><datepicker:DateBox ui:field="toDate2" /></td>
+		</tr>
+		</table>
+		<g:CheckBox ui:field="closeCb">关闭</g:CheckBox>
+		<g:Button ui:field="saveBtn" styleName="style.important" >保存</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder> 

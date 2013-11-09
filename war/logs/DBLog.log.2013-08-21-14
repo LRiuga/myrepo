@@ -1,0 +1,145 @@
+ INFO 21 八月 14:00:22,997- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:00:30,309- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 21 八月 14:04:31,007- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:04:31,007- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:07:56,690- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =31
+ INFO 21 八月 14:07:56,754- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:12:31,315- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:12:31,331- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 21 八月 14:13:07,855- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:13:07,870- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =15
+ INFO 21 八月 14:14:04,931- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:14:04,947- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:16:00,235- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =16
+ INFO 21 八月 14:16:00,235- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:37:51,826- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =438
+ INFO 21 八月 14:37:51,826- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =438
+ERROR 21 八月 14:38:05,908- execSQLUpdate error
+java.sql.SQLException: 列名 'rewardTy' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:218)
+	at com.mozat.morange.admin.server.RewardServiceImpl.setRewad(RewardServiceImpl.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 21 八月 14:38:05,910- execSQLUpdate: insert into activityReward(userId,activityId,rewardTy,rewardAmount,addRewardTime,issueType,status,falg) values(?,?,?,?,?,?,?,?) =11
+ INFO 21 八月 14:38:55,357- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =156
+ INFO 21 八月 14:38:55,357- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =156
+ERROR 21 八月 14:39:01,165- execSQLUpdate error
+java.sql.SQLException: 列名 'falg' 无效。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:218)
+	at com.mozat.morange.admin.server.RewardServiceImpl.setRewad(RewardServiceImpl.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 21 八月 14:39:01,167- execSQLUpdate: insert into activityReward(userId,activityId,rewardType,rewardAmount,addRewardTime,issueType,status,falg) values(?,?,?,?,?,?,?,?) =11
+ INFO 21 八月 14:39:36,481- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =109
+ INFO 21 八月 14:39:36,481- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =109
+ERROR 21 八月 14:39:41,682- execSQLUpdate error
+java.sql.SQLException: 不能将值 NULL 插入列 'isnew'，表 'OceanAgeNewServer.dbo.activityReward'；列不允许有空值。INSERT 失败。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:218)
+	at com.mozat.morange.admin.server.RewardServiceImpl.setRewad(RewardServiceImpl.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 21 八月 14:39:41,684- execSQLUpdate: insert into activityReward(userId,activityId,rewardType,rewardAmount,addRewardTime,issueType,status,flag) values(?,?,?,?,?,?,?,?) =10
+ INFO 21 八月 14:45:24,899- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =229
+ INFO 21 八月 14:45:24,900- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =229
+ INFO 21 八月 14:45:34,327- execSQLUpdate: insert into activityReward(userId,activityId,rewardType,rewardAmount,addRewardTime,issueType,status,flag,isNew) values(?,?,?,?,?,?,?,?,?) =5
+ INFO 21 八月 14:45:36,297- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 21 八月 14:45:36,313- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0

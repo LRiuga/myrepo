@@ -1,0 +1,16 @@
+ INFO 25 十月 10:56:46,571- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =619
+ INFO 25 十月 10:56:46,571- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =619
+ INFO 25 十月 10:56:46,601- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =8
+ INFO 25 十月 10:56:57,172- execSQL: select * from WorldMonsterConf =5
+ INFO 25 十月 10:57:04,269- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 25 十月 10:57:04,399- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 25 十月 10:57:04,402- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id  desc ) as tablePage order by id asc) as tablePage2 order by id desc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 25 十月 10:57:11,253- execSQL: select * from WorldMonsterConf =3
+ INFO 25 十月 10:57:16,925- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =4
+ INFO 25 十月 10:57:16,926- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =1
+ INFO 25 十月 10:57:16,928- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =1
+ INFO 25 十月 10:58:17,236- execSQL: select * from WorldMonsterConf =3
+ INFO 25 十月 10:59:01,255- execSQL: select * from WorldMonsterConf =497
+ INFO 25 十月 10:59:05,170- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =2
+ INFO 25 十月 10:59:05,173- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =2
+ INFO 25 十月 10:59:05,175- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =2

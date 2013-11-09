@@ -1,0 +1,51 @@
+ INFO 11 十月 18:11:40,894- doExecSQLQuery: select sum(isVisible) from  ShopItemViewConfig where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone')@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =856
+ INFO 11 十月 18:11:41,282- doExecSQLQuery: select * from DailyEventSchedule  where id = 3 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =386
+ INFO 11 十月 18:11:41,435- doExecSQLQuery: SELECT itemtype  from continousCheckInConf WHERE id = 8 and rewardlevel = 5 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =153
+ INFO 11 十月 18:11:52,871- execSQLUpdate: update  ShopItemViewConfig set isVisible = 1  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =167
+ERROR 11 十月 18:11:53,029- execSQLUpdate error
+java.sql.SQLException: Violation of PRIMARY KEY constraint 'PK__DailyEventSchedu__7760A435'. Cannot insert duplicate key in object 'dbo.DailyEventSchedule'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:525)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:487)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeUpdate(JtdsPreparedStatement.java:421)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at com.mozat.morange.util.MoDBRW.execSQLUpdate(MoDBRW.java:284)
+	at com.mozat.morange.admin.server.FriendServiceImpl.saveFunction(FriendServiceImpl.java:465)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 11 十月 18:11:53,031- execSQLUpdate: insert into DailyEventSchedule(id,eventTypeid,startDate,endDate,occurs) values(3,3,'00:00:00','23:59:59',3) =160
+ INFO 11 十月 18:11:53,192- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =160
+ INFO 11 十月 18:13:15,698- execSQLUpdate: update  ShopItemViewConfig set isVisible = 1  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =85
+ INFO 11 十月 18:13:15,857- execSQLUpdate: delete from DailyEventSchedule  where id = 3 =158
+ INFO 11 十月 18:13:15,934- execSQLUpdate: update continousCheckInConf set itemtype = 'Weapon' ,itemtext = 'name.weapontype.26',itemtypeid = 1 ,itemAmount = 1 where id = 8 and rewardlevel = 5 =77
+ INFO 11 十月 18:13:25,568- execSQLUpdate: update  ShopItemViewConfig set isVisible = 0  where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone') =165
+ INFO 11 十月 18:13:25,645- execSQLUpdate: insert into DailyEventSchedule(id,eventTypeid,startDate,endDate,occurs) values(3,3,'00:00:00','23:59:59',3) =77
+ INFO 11 十月 18:13:25,804- execSQLUpdate: update continousCheckInConf set itemtype = 'ReinforceStone' ,itemtext = 'name.ReinforceStone',itemtypeid = 3 ,itemAmount = 5 where id = 8 and rewardlevel = 5 =158

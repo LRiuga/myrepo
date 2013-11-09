@@ -1,0 +1,1 @@
+ INFO 04 十一月 15:28:32,590- doExecSQLQuery: select * from _activityFishingScoreConf@jdbc:jtds:sqlserver://192.168.50.13:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =745

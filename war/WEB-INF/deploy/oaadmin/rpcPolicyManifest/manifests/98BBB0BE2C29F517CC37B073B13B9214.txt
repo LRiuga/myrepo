@@ -1,0 +1,2 @@
+serviceClass: com.mozat.morange.admin.client.FriendService
+path: A4A4F0AE177AF6CC35CF35C4719CACE7.gwt.rpc

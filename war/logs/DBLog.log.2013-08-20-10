@@ -1,0 +1,1 @@
+ INFO 20 八月 10:15:14,841- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =312

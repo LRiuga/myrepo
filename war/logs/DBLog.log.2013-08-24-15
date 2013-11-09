@@ -1,0 +1,123 @@
+ INFO 24 八月 15:01:27,590- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =577
+ INFO 24 八月 15:01:27,606- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:07:54,604- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:07:54,604- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:08:14,051- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:08:14,054- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:08:57,784- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:08:57,784- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:09:15,809- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:09:15,825- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:09:29,560- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 24 八月 15:09:29,564- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:09:35,116- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:09:35,116- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:10:23,386- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:10:23,402- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:10:29,054- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:10:29,070- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:11:22,273- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,368- doExecSQLQuery: select count(*) as num from activityReward@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,508- doExecSQLQuery: select id,shopitemid,type from ActivityPrizeList  where type <= 6@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =109
+ INFO 24 八月 15:11:22,508- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,508- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,508- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,524- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:22,540- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:11:32,226- doExecSQLQuery: select count(*) as num from activityReward@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select id,shopitemid,type from ActivityPrizeList  where type <= 6@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,242- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:11:32,258- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:11:32,260- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 24 八月 15:11:32,262- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 24 八月 15:11:32,264- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =1
+ INFO 24 八月 15:11:32,266- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  activityReward) a WHERE  RowNumber > ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:11:37,617- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 24 八月 15:11:37,620- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:11:40,535- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 24 八月 15:11:40,538- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:14:32,262- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:14:32,278- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:14:45,506- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:14:45,522- doExecSQLQuery: select * from (select top 15 * from (select top 30 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =16
+ INFO 24 八月 15:17:26,650- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:17:26,650- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:18:50,631- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:18:55,039- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:18:55,039- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:33:08,937- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:33:09,040- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =15
+ INFO 24 八月 15:33:09,040- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 24 八月 15:33:22,073- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'Fishing' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:33:22,075- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc where activityName like 'Fishing' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ERROR 24 八月 15:33:22,078- execSQLQuery db(0) error
+java.sql.SQLException: 关键字 'where' 附近有语法错误。
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:365)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2781)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2224)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:628)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQLQuery(JtdsStatement.java:418)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:693)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:92)
+	at com.mozat.morange.util.MoDBRW.doExecSQLQuery(MoDBRW.java:146)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:167)
+	at com.mozat.morange.util.MoDBRW.execSQLQuery(MoDBRW.java:199)
+	at com.mozat.morange.admin.server.ActivityListServiceImpl.list(ActivityListServiceImpl.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processCall(RemoteServiceServlet.java:208)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:729)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.handler.RequestLogHandler.handle(RequestLogHandler.java:49)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:647)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+ INFO 24 八月 15:36:59,827- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =562
+ INFO 24 八月 15:36:59,827- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =563
+ INFO 24 八月 15:36:59,842- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =15
+ INFO 24 八月 15:37:03,584- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'AttackFriend' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:37:03,588- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2  where activityName like 'AttackFriend' order by id @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:07,435- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'Fishing' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:37:07,438- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2  where activityName like 'Fishing' order by id @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:10,709- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'Topup' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:37:10,713- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2  where activityName like 'Topup' order by id @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:13,132- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'DeclareWar' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:13,136- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2  where activityName like 'DeclareWar' order by id @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:15,964- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'UpgradeEvent' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:37:15,968- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2  where activityName like 'UpgradeEvent' order by id @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:19,742- doExecSQLQuery: SELECT distinct ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:37:19,834- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 24 八月 15:37:19,838- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:27,612- doExecSQLQuery: select count(*) as num from ActivityConf where activityName like 'Ramadan' @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =3
+ INFO 24 八月 15:37:27,617- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from ActivityConf order by id ) as tablePage order by id desc) as tablePage2  where activityName like 'Ramadan' order by id @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =5

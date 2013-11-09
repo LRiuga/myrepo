@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		td {
+			text-align:center;	
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:FlexTable ui:field="fishActivityList" borderWidth="2" width="95%"></g:FlexTable>
+		<br/>
+		<!--<g:Button styleName="style.important" ui:field="removeBtn">Remove</g:Button> -->
+		<br/><br/>
+		<g:FlexTable ui:field="table" borderWidth="2" width="95%"></g:FlexTable>
+		<br/>
+		<g:Button styleName="style.important" ui:field="addBtn">Add</g:Button>
+		<br/>
+		<g:Label>奖励类型</g:Label>
+		<g:Label>商店物品---0</g:Label>
+		<g:Label>金币---1</g:Label>
+		<g:Label>珍珠---2</g:Label>
+		<g:Label>船---3</g:Label>
+		<g:Label>VipChat---4</g:Label>
+		<g:Label>皇冠---5</g:Label>
+		<g:Label>宠物经验---6</g:Label>
+		<g:Label>家族贡献---7</g:Label>
+		<g:Label>宠物形象卡---8</g:Label>
+		<g:Label>装备---9</g:Label>
+		<g:Label>星玉---10</g:Label>
+		<g:Label>普通强化石---11</g:Label>
+		<g:Label>高级强化石---12</g:Label>
+		<g:Label>超级强化石---13</g:Label>
+		<g:Label>蓝宝石---14</g:Label>
+	</g:HTMLPanel>
+</ui:UiBinder> 

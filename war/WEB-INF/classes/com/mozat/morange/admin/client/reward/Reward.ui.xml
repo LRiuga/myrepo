@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		td {
+			text-align:center;
+			} 
+	</ui:style>
+	<g:HTMLPanel>
+		<table>
+		<tr>
+			<td>activityId</td>
+			<td><g:ListBox ui:field="activityId"></g:ListBox></td>
+		</tr>
+		<tr>
+			<td>activityName</td>
+			<td><g:TextBox ui:field="activityName"></g:TextBox></td>
+		</tr>
+		<tr>
+			<td><g:Label>User ID </g:Label></td>
+			<td><g:TextArea ui:field="userId"></g:TextArea></td>
+		</tr>
+		<tr>
+			<td>Item Type</td>
+			<td><g:ListBox ui:field="itemType"></g:ListBox></td>
+		</tr>
+		<tr>
+			<td>Item Name</td>
+			<td><g:ListBox ui:field="itemName"></g:ListBox></td>
+		</tr>
+		<tr>
+			<td>Item Count</td>
+			<td><g:TextBox ui:field="itemCount"></g:TextBox></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<g:Button ui:field="addBtn" styleName="style.important">Add</g:Button>
+			</td>
+		</tr>
+	</table><br/>
+	<g:FlexTable borderWidth="1" cellPadding="1" cellSpacing="1"  ui:field="reawrdFlexTable" width="80%"  /><br/>
+	<table width="80%"><tr width="80%"><td width="100%"><g:Button ui:field="confirm" styleName="style.important" >Confirm</g:Button></td></tr></table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

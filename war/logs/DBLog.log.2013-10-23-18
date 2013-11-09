@@ -1,0 +1,13 @@
+ INFO 23 十月 18:00:51,950- execSQL: select * from WorldMonsterConf =1866
+ INFO 23 十月 18:39:10,344- execSQL: select * from WorldMonsterConf =796
+ INFO 23 十月 18:39:28,815- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =163
+ INFO 23 十月 18:39:28,892- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =76
+ INFO 23 十月 18:39:28,973- execSQLUpdate: update  WorldMonsterConf set value = ? where name = ? =80
+ INFO 23 十月 18:41:20,407- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 23 十月 18:41:21,907- execSQL: select itemid,buy_level,quality from (select id,buy_level,quality from EquipmentType) t1 JOIN (select itemtypeid,itemid from shopitem where itemType = 'Equipment' or itemType = 'combo' ) t2 on t1.id = t2.itemtypeid =470
+ INFO 23 十月 18:41:22,063- execSQL: select shopitems from discountConf where discountType = ? =156
+ INFO 23 十月 18:41:22,780- execSQL: select itemid,buy_level,quality from (select id,buy_level,quality from EquipmentType) t1 JOIN (select itemtypeid,itemid from shopitem where itemType = 'Equipment' or itemType = 'combo' ) t2 on t1.id = t2.itemtypeid =171
+ INFO 23 十月 18:41:22,857- execSQL: select shopitems from discountConf where discountType = ? =77
+ INFO 23 十月 18:41:33,111- execSQL: select * from WorldMonsterConf =79
+ INFO 23 十月 18:57:37,012- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =738
+ INFO 23 十月 18:57:55,269- doExecSQLQuery: select userlevel,quality from ( SELECT id ,buy_level,quality from EquipmentType  where buy_level > 0   ) a   JOIN  (  select itemid ,itemtypeid ,userlevel from shopitem WHERE itemtype = 'Equipment'  )b on a.id = b.itemtypeid JOIN ( 	select shopitemid,isVisible from ShopItemViewConfig  where pageid = 5)c on b.itemid = c.shopitemid where c.isVisible > 0 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =383

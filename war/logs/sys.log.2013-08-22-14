@@ -1,0 +1,12 @@
+ERROR 22 八月 14:02:48,605 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ERROR 22 八月 14:04:29,394 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ERROR 22 八月 14:05:33,310 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ERROR 22 八月 14:06:17,491 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ERROR 22 八月 14:07:26,837 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ERROR 22 八月 14:08:05,039 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ERROR 22 八月 14:09:18,274 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ INFO 22 八月 14:10:21,443 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@5cd574
+ERROR 22 八月 14:10:37,912 -(isherDataServiceImpl.java:  26) - java.lang.NullPointerException
+ INFO 22 八月 14:11:36,643 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@9690ec
+ INFO 22 八月 14:43:45,583 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@15ffaf0
+ INFO 22 八月 14:59:36,347 -(              MoDBRW.java: 114) - net.sourceforge.jtds.jdbc.ParameterMetaDataImpl@1839026

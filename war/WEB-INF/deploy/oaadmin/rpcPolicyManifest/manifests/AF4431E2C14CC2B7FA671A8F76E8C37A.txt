@@ -1,0 +1,2 @@
+serviceClass: com.mozat.morange.admin.client.reward.RewardService
+path: 103DE01234C1CA04D4090838D7A17E23.gwt.rpc

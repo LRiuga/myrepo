@@ -1,0 +1,26 @@
+ INFO 12 十月 16:04:18,527- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =801
+ INFO 12 十月 16:04:24,998- execSQLUpdate: update ArenaType set minLevel = ? , maxLevel = ? , isPublic = ? where id = ? =153
+ INFO 12 十月 16:04:25,164- execSQLUpdate: DELETE from ArenaRanking  WHERE arenaTypeId = ? and userId in ( SELECT ownerid from Pet WHERE petLevel < ? and petLevel > ? 	) =166
+ INFO 12 十月 16:07:59,383- doExecSQLQuery: select * from ArenaType@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 12 十月 16:20:57,497- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =482
+ INFO 12 十月 16:21:08,795- execSQLUpdate: UPDATE functionOnlineConf set status = ? ,startTime = ?,endTime=? where name = 'equipmentLuckyDraw' =153
+ INFO 12 十月 16:26:44,160- doExecSQLQuery: select startTime,endTime,status from functionOnlineConf where name = 'equipmentDiscount'@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =463
+ INFO 12 十月 16:26:48,544- execSQLUpdate: UPDATE functionOnlineConf set status = ? ,startTime = ?,endTime=? where name = 'equipmentDiscount' =164
+ INFO 12 十月 16:26:52,641- execSQLUpdate: UPDATE functionOnlineConf set status = ? ,startTime = ?,endTime=? where name = 'equipmentDiscount' =77
+ INFO 12 十月 16:29:06,403- doExecSQLQuery: select sum(isVisible) from  ShopItemViewConfig where shopitemid in ( select  itemId from shopitem where itemType = 'ReinforceStone')@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =426
+ INFO 12 十月 16:29:06,560- doExecSQLQuery: select * from DailyEventSchedule  where id = 3 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =156
+ INFO 12 十月 16:29:06,721- doExecSQLQuery: SELECT itemtype  from continousCheckInConf WHERE id = 8 and rewardlevel = 5 @jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAgeConfig_n1;user=mozone;password=morangerunmozone;useLOBs=false =160
+ INFO 12 十月 16:30:55,093- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =230
+ INFO 12 十月 16:30:55,550- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =609
+ INFO 12 十月 16:30:55,712- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =157
+ INFO 12 十月 16:32:10,898- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =159
+ INFO 12 十月 16:37:06,244- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =84
+ INFO 12 十月 16:37:06,347- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =80
+ INFO 12 十月 16:37:06,426- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 12 十月 16:37:19,647- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 12 十月 16:37:22,375- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =77
+ INFO 12 十月 16:37:25,021- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =81
+ INFO 12 十月 16:37:46,970- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 12 十月 16:37:47,077- doExecSQLQuery: select count(*) as num from _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78
+ INFO 12 十月 16:37:47,157- doExecSQLQuery: select * from (select top 15 * from (select top 15 * from _activity order by id ) as tablePage order by id desc) as tablePage2 order by id asc@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =79
+ INFO 12 十月 16:37:51,203- doExecSQLQuery: SELECT distinct activity_name FROM _activity@jdbc:jtds:sqlserver://192.168.50.14:43103/OceanAge_n1;user=mozone;password=morangerunmozone;useLOBs=false =78

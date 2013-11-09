@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		td {
+			text-align:center;	
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:FlexTable ui:field="eList" borderWidth="2" width="95%"></g:FlexTable><br/>
+		<g:Button ui:field="saveBtn" styleName="style.important">保存</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder> 

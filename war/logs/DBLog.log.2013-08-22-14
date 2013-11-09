@@ -1,0 +1,33 @@
+ INFO 22 八月 14:10:21,437- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:10:21,440- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:10:21,442- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:10:21,444- execSQL: select user_name from user_info where user_id=? =2
+ INFO 22 八月 14:11:36,637- doExecSQLQuery: select monetId from profile where nickName=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:11:36,639- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:11:36,641- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:11:36,642- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:11:36,644- execSQL: select user_name from user_info where user_id=? =1
+ INFO 22 八月 14:43:45,578- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:43:45,580- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:43:45,582- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =1
+ INFO 22 八月 14:43:45,584- execSQL: select user_name from user_info where user_id=? =1
+ INFO 22 八月 14:59:22,856- doExecSQLQuery: select id,shopitemid,type from ActivityPrizeList  where type <= 6@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =468
+ INFO 22 八月 14:59:22,856- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =499
+ INFO 22 八月 14:59:22,856- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,856- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select ship_name from shipType where id = ? @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,871- doExecSQLQuery: select itemcreditText from shopitem where itemtype = 'Equipment' and itemtypeid = ?  @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:22,887- doExecSQLQuery: select itemcreditText from shopitem where itemid = ?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 22 八月 14:59:22,887- doExecSQLQuery: SELECT TOP 15 * FROM (SELECT ROW_NUMBER() OVER (ORDER BY id desc ) AS RowNumber,  * FROM  activityReward) a WHERE  RowNumber >?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:28,342- doExecSQLQuery: SELECT  id,ActivityName FROM activityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
+ INFO 22 八月 14:59:28,358- doExecSQLQuery: select id,shopitemid,type  from ActivityPrizeList @jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServerConfig;user=sa;password=mozat01;useLOBs=false =16
+ INFO 22 八月 14:59:36,336- doExecSQLQuery: select monetId,nickName,balance from profile where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 14:59:36,339- doExecSQLQuery: select money from fisher where monetId=?@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 14:59:36,341- doExecSQLQuery: select [count] from gem where ownerId=? and typeId=1@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =2
+ INFO 22 八月 14:59:36,350- execSQL: select user_name from user_info where user_id=? =8

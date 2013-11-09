@@ -1,0 +1,4 @@
+ INFO 24 八月 14:53:34,988- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =234
+ INFO 24 八月 14:56:26,614- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =563
+ INFO 24 八月 14:57:47,772- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =187
+ INFO 24 八月 14:59:34,704- doExecSQLQuery: select count(*) as num from ActivityConf@jdbc:jtds:sqlserver://192.168.50.13/OceanAgeNewServer;user=sa;password=mozat01;useLOBs=false =0
